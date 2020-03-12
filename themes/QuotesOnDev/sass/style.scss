@@ -1,0 +1,34 @@
+/*
+Theme Name: Quotes on Dev
+Author: David Hillock
+Description: A wicked theme we made.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: quotes_on_dev
+*/
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/page-about';
+@import 'pages/page-archives';
+
+
+@import 'pages/404';
+
+
+@import 'single';
+@import 'category';
+@import 'tag';
+
+
+@import 'submitQuote';

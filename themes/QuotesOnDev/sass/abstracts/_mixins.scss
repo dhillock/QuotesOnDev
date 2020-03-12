@@ -1,0 +1,25 @@
+// The mixin name can be anything you want. Then use that name when you call the mixin with the @include
+
+@mixin primary-links {
+    text-decoration: underline;
+}
+
+@mixin tablet {
+    @media (min-width: $width-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $width-desktop) {
+        @content;
+    }
+}
+
+@mixin flex-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    //@content;
+}

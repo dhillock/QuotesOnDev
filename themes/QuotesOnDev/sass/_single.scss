@@ -1,0 +1,31 @@
+//
+//
+.selected-author-page {
+    background-color: orange;
+    background-color: pink;
+    background-color: white;
+    width: 600px;
+
+
+    .selected-author-title {
+        margin-top: 1px;
+        font-size: 2rem;
+    }
+
+    .line-top {
+        border-top: 1px dotted white;
+        border-color: red;
+        margin-top: 40px;
+    }
+
+    .nav-links {
+        color: red;
+
+        .selected-author-navigation {
+            background-color: yellowgreen;
+            color: red;
+        }
+
+    }
+
+}
