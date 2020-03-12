@@ -1,4 +1,7 @@
 <?php
+
+show_admin_bar(false);
+
 /**
  * Quotes on Dev Theme functions and definitions.
  *
@@ -98,4 +101,9 @@ function red_scripts() {
  }
  add_action( 'wp_enqueue_scripts', 'red_scripts' );
 
+ // So that we can use fontawsome icons in our text
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
+}
 

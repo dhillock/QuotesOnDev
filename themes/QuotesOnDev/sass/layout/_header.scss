@@ -1,15 +1,13 @@
 header {
+  background-color: $color-main-background;
+  margin-top: 3rem;
 
-  margin-top: 4rem;
-  width: 600px;
+  .image-wrapper {
+    max-width: 100%;
 
-  // background-color: yellow;
-
-  .image-logo {}
-
-  p {
-    background-color: purple;
-    font-family: $font-main;
-    font-size: 1.6rem;
+    img {
+      display: block;
+      width: 300px;
+    }
   }
 }

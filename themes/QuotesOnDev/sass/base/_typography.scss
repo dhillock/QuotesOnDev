@@ -1,3 +1,6 @@
+// We need the "../../ here because the fonts are being access from the
+// minifie file in the build/cs folder.
+
 @font-face {
   font-family: 'Exo-Light';
   src: url('../../fonts/Exo-Light.eot');

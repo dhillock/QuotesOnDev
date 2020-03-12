@@ -1,32 +1,22 @@
 html {
   --base-spacing: $base-spacing;
-  width: $width-max;
-  max-width: $width-max;
-  margin: auto;
 }
 
-// body {
-//     background: $color-main-background;
+body {
+  margin: $base-margin;
+  max-width: 1080px;
+  padding: 2.5%;
+  width: 100%;
 
-//     font-family: $font-main;
-//     font-weight: $font-weight;
-//     // font-style: $font-styleTemp;
-//     font-size: $base-font-size;
+  background: $color-main-background;
+  font-family: $font-main;
+  line-height: $base-line-height;
+}
 
-//     margin: $base-margin;
-
-//     line-height: $base-line-height;
-
-//     color: $base-font-color;
-//     width: $width-desktop;
-//     max-width: $width-max;
-//     min-width: $width-max;
+// ////David, is this used?
+// .primary-menu {
+//   font-size: $base-font-size;
 // }
-
-////David, is this used?
-.primary-menu {
-  font-size: $base-font-size;
-}
 
 h1,
 h2,
@@ -35,7 +25,6 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: $font-main;
+  // font-family: $font-main;
   letter-spacing: 2px;
-  // text-transform: uppercase;
 }
