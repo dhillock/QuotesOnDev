@@ -245,6 +245,9 @@ a img.aligncenter {
 html {
   --base-spacing: $base-spacing; }
 
+:root {
+  font-size: 16px; }
+
 body {
   margin: 0 auto;
   max-width: 1080px;
@@ -253,15 +256,20 @@ body {
   background: #222222;
   font-family: Exo-Light, sans-serif;
   line-height: 1.5; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  clear: both;
-  letter-spacing: 2px; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    clear: both;
+    font-family: Exo-Medium, sans-serif;
+    color: #ffffff;
+    letter-spacing: 2px; }
+  body a {
+    color: #00cc00; }
+    body a:hover {
+      color: hotpink; }
 
 @font-face {
   font-family: 'Exo-Light';
@@ -334,18 +342,25 @@ footer {
     font-size: 1rem;
     padding: 15px 30px; }
 
+.about {
+  margin-top: 3rem;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: #ffffff; }
+  .about h1 {
+    font-size: 32px; }
+  .about p {
+    margin: 25px 0; }
+
 .archive-page {
-  width: 600px;
   margin-left: 2rem;
   padding-bottom: 75px; }
   .archive-page h1 {
-    font-size: 2rem;
-    padding: 25px 0; }
+    font-size: 2rem; }
   .archive-page h2 {
     font-size: 1.5rem;
-    margin: 25px 0; }
+    line-height: 2.25rem; }
   .archive-page a {
-    color: #00cc00;
     padding-right: 10px; }
 
 .selected-author-page {
