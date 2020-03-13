@@ -300,17 +300,22 @@ header {
       display: block;
       width: 300px; }
 
-footer span {
-  background-color: red;
-  padding: 5px 10px; }
-
-footer a {
-  background-color: green;
-  padding-right: 5px; }
-
-footer p {
-  background-color: pink;
-  margin-top: 15px; }
+footer {
+  margin-top: 6rem; }
+  footer .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  footer .company-info p,
+  footer .company-info a {
+    display: inline; }
+  footer p {
+    color: white; }
+  footer a {
+    color: #00cc00;
+    text-decoration: none; }
+  footer #menu-item-210 a {
+    color: yellow; }
 
 .random-quote-home-page {
   color: white; }

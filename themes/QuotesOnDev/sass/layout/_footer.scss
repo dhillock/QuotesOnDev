@@ -1,16 +1,25 @@
 footer {
-  span {
-    background-color: red;
-    padding: 5px 10px;
+  margin-top: 6rem;
+
+  .menu {
+    display: flex;
   }
 
-  a {
-    background-color: green;
-    padding-right: 5px;
+  .company-info p,
+  .company-info a {
+    display: inline;
   }
 
   p {
-    background-color: pink;
-    margin-top: 15px;
+    color: white;
+  }
+
+  a {
+    color: $brand-green;
+    text-decoration: none;
+  }
+
+  #menu-item-210 a {
+    color: yellow;
   }
 }

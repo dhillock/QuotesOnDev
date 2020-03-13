@@ -1,24 +1,15 @@
 <?php wp_footer();?> 
 
-  <footer>
-          <!-- <a href="#">About</a>         <span>|</span> -->
-<!-- 
-          <a href="<?php echo get_home_url(); ?>/about">About</a>  <span>|</span> 
+  <footer class = 'site-footer'>
 
-          <a href="<?php echo get_home_url(); ?>/archives">ArchivesXX</a>   <span>|</span> 
-
-          <a href="#">Submit a Quote</a>
-
-
-            <p>
-            Brought to you by
-            <a href="#"> RED Academy</a>
-          </p> -->
-
-
-
+  <nav class = 'the-menu'>
         <?php wp_nav_menu(array('theme_location' => 'primary'));?>
+  </nav>
 
+  <div class = 'company-info'>
+    <p> Brought to you by </p>
+    <a href="https://redacademy.com/vancouver/">RED Academy</a> 
+</div>
 
   </footer>
 
