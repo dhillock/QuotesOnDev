@@ -1,12 +1,15 @@
 .archive-page {
   // background-color: orange;
   // width: 600px;
-  margin-left: 2rem;
+  // margin-left: 2rem;
   padding-bottom: 75px;
+  line-height: 2rem;
+  // margin: 0 0 1.3rem 3rem;
+
 
   h1 {
     font-size: 2rem;
-    // padding: 25px 0;
+    padding: 25px 0;
   }
 
   h2 {
@@ -16,6 +19,8 @@
   }
 
   a {
+    font-family: $base-font-text;
     padding-right: 10px;
+    text-decoration: none;
   }
 }

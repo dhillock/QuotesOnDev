@@ -353,33 +353,48 @@ footer {
     margin: 25px 0; }
 
 .archive-page {
-  margin-left: 2rem;
-  padding-bottom: 75px; }
+  padding-bottom: 75px;
+  line-height: 2rem; }
   .archive-page h1 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding: 25px 0; }
   .archive-page h2 {
     font-size: 1.5rem;
     line-height: 2.25rem; }
   .archive-page a {
-    padding-right: 10px; }
+    font-family: Exo-Light, sans-serif;
+    padding-right: 10px;
+    text-decoration: none; }
 
-.selected-author-page {
-  background-color: orange;
-  background-color: pink;
-  background-color: white;
-  width: 600px; }
-  .selected-author-page .selected-author-title {
-    margin-top: 1px;
-    font-size: 2rem; }
-  .selected-author-page .line-top {
-    border-top: 1px dotted white;
-    border-color: red;
-    margin-top: 40px; }
-  .selected-author-page .nav-links {
-    color: red; }
-    .selected-author-page .nav-links .selected-author-navigation {
-      background-color: yellowgreen;
-      color: red; }
+.author-page {
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-family: Exo-Light, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: inherit;
+  color: white; }
+  .author-page .author-quote {
+    margin-bottom: 1.25rem; }
+  .author-page .author {
+    margin-top: 3rem; }
+  .author-page a {
+    color: brand-green; }
+  .author-page #quote-button {
+    background: #222222;
+    border: 2px solid #00cc00;
+    color: #00cc00;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 15px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 .selected-category-page {
   background-color: orange;

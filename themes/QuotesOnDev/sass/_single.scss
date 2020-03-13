@@ -1,31 +1,69 @@
 //
-//
-.selected-author-page {
-    background-color: orange;
-    background-color: pink;
-    background-color: white;
-    width: 600px;
+// //
+// .selected-author-page {
+//     background-color: orange;
+//     background-color: pink;
+//     background-color: white;
+//     width: 600px;
 
 
-    .selected-author-title {
-        margin-top: 1px;
-        font-size: 2rem;
+//     .selected-author-title {
+//         margin-top: 1px;
+//         font-size: 2rem;
+//     }
+
+//     .line-top {
+//         border-top: 1px dotted white;
+//         border-color: red;
+//         margin-top: 40px;
+//     }
+
+//     .nav-links {
+//         color: red;
+
+//         .selected-author-navigation {
+//             background-color: yellowgreen;
+//             color: red;
+//         }
+
+//     }
+
+// }
+
+.author-page {
+    // background-color: green;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-family: $base-font-text;
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: inherit;
+
+    color: white;
+
+    .author-quote {
+        margin-bottom: 1.25rem;
     }
 
-    .line-top {
-        border-top: 1px dotted white;
-        border-color: red;
-        margin-top: 40px;
+    .author {
+        margin-top: 3rem;
     }
 
-    .nav-links {
-        color: red;
-
-        .selected-author-navigation {
-            background-color: yellowgreen;
-            color: red;
-        }
-
+    a {
+        color: brand-green;
     }
+
+    #quote-button {
+        background: $color-main-background;
+        border: 2px solid $brand-green;
+        color: $brand-green;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 15px 30px;
+        display: flex;
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+
 
 }
