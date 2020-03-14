@@ -15,14 +15,27 @@
     <?php foreach ( $quotes as $post ) : setup_postdata( $post ); ?>
 
         <!-- Display the random quote (the content) -->
-        <div class="home-page-quote">
+        <div class="home-quote">
             <q>
                 <?php the_content(); ?> 
             </q>
         </div>
 
-        <!-- Display the random quote title -->
-        <p class="author">- <?php the_title(); ?></p>
+    <div class="quote-section">
+
+        <!-- add, If there is a source, add a ",&nbsp;" after the author name...otherwise, don't add it -->
+
+        <span class="author">— <?php echo the_title() . ",&nbsp;"; ?></span>
+
+        <div class="source">
+
+            <a href="class="source-link" target="new" <?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>" > 
+        
+            <span><?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></a></span>
+
+        </div>
+
+    </div>
         
     <?php endforeach;?>
 
@@ -31,11 +44,7 @@
 
 </section>
 
- 
-</footer>
+ </footer>
 
 <!-- Footer -->
 <?php get_footer();?>
-
-
-

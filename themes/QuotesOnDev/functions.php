@@ -87,23 +87,34 @@ require get_template_directory() . '/inc/metaboxes.php';
 require get_template_directory() . '/inc/api.php';
 
 ////////////////////////////////////////////////
-//Added this function for QoD. Thank's Johnny!
+//Added this function for QoD. 
 ////////////////////////////////////////////////
 
 function red_scripts() {
 	$script_url = get_template_directory_uri() . '/js/api.js';
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), false, true );
+    wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
+
    wp_localize_script( 'red_comments', 'red_vars', array(
 	   'rest_url' => esc_url_raw( rest_url() ),
-	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' )
+	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
    ) );
  }
+
  add_action( 'wp_enqueue_scripts', 'red_scripts' );
 
- // So that we can use fontawsome icons in our text
-add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
-function enqueue_load_fa() {
-wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
-}
+//  function tag_page_filters($query) {
+// 	if (is_tag()) : 
 
+
+//     $query->set('orderby', 'slug');
+//     $query->set('order', 'ASC');
+//     $query->set('hide_empty', 1);
+// 	$query->set('number', 4);
+	
+
+
+//     endif; 
+// }
+// add_action('pre_get_posts', 'tag_page_filters');

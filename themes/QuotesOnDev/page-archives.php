@@ -63,11 +63,12 @@
             'orderby' => 'slug',
             'order' => 'ASC', 
             'hide_empty' => 1,
-            'number' => 9999
+            'number' => 999
         ); 
-
+      
         $tags = get_tags($args);
-        
+
+       
         foreach ($tags as $tag) { $tag_id = $tag->term_id; $tag_name = $tag->name; 
     
              echo '<a href="' . get_tag_link( $tag_id ) . '">'.$tag->name.'</a>';      
@@ -76,5 +77,6 @@
     ?>
 
 </div>
+
 <!-- Get the footer -->
 <?php get_footer();?>
