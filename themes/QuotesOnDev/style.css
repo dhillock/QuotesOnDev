@@ -325,22 +325,6 @@ footer {
   footer #menu-item-210 a {
     color: yellow; }
 
-.search-form {
-  background-color: pink; }
-
-.search-field {
-  background-color: pink; }
-
-.search-input {
-  background-color: transparent;
-  background-color: yellow;
-  text-transform: uppercase;
-  color: black;
-  font-size: 10rem;
-  text-decoration: none;
-  border: none;
-  padding: .25rem .5rem; }
-
 .search-results {
   background-color: white; }
 
@@ -421,6 +405,43 @@ footer {
   height: 30px;
   padding: 2px 5px;
   cursor: pointer; }
+
+.page-not-found {
+  font-family: Exo-Light, sans-serif;
+  font-size: 1rem; }
+  .page-not-found h1 {
+    font-family: Exo-Medium, sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .page-not-found h2 {
+    font-family: Exo-Light, sans-serif;
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: 24px; }
+
+.search-form .search-field {
+  margin-left: 0px; }
+
+.search-form .fas {
+  margin-left: 15px;
+  text-transform: none; }
+
+.search-form .search-input {
+  background-color: transparent;
+  background-color: #222222;
+  width: 240px;
+  border: 2px solid #00cc00;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  color: white;
+  font-family: Exo-Light, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: .25rem .5rem;
+  line-height: 1.5rem; }
 
 .selected-author-page {
   margin-top: 1.25rem;

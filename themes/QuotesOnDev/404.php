@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="broken-page">
+<div class="page-not-found">
 
     <h1>Oops!</h1>
     <h2>It looks like nothing was found at this location? Maybe try a search?</h2>

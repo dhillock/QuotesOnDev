@@ -1,0 +1,59 @@
+.page-not-found {
+    // background-color: orange;
+    font-family: $base-font-text;
+    font-size: 1rem;
+
+
+    h1 {
+        font-family: $base-font-heading;
+
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-family: $base-font-text;
+        font-size: 1rem;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+
+}
+
+.search-form {
+
+
+    .search-field {
+        margin-left: 0px;
+        // height: 5rem;
+    }
+
+    .fas {
+        margin-left: 15px;
+        text-transform: none;
+    }
+
+    .search-input {
+        background-color: transparent;
+        background-color: #222222;
+        width: 240px;
+        border: 2px solid $brand-green;
+        border-radius: 3px;
+
+        margin-bottom: 1.5rem;
+
+        color: #000000;
+        color: white;
+        font-family: $base-font-text;
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none;
+        padding: .25rem .5rem;
+        line-height: 1.5rem;
+
+    }
+
+
+}

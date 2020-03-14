@@ -2,6 +2,7 @@
 
   <footer class = 'site-footer'>
 
+
   <nav class = 'the-menu'>
         <!-- <?php wp_nav_menu(array('theme_location' => 'primary'));?> -->
 
@@ -9,8 +10,8 @@
 						 	‘theme_location’ => ‘primary’,
 							 ‘menu_id’ => ‘primary-menu’,
 							 ‘menu_class’ => ‘footer-navigation’
-						 	)
-						);?>
+						 	));
+        ?>
             
   </nav>
 
