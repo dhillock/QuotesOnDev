@@ -12,16 +12,27 @@
         $quotequery = array( 
             'orderby' => 'title',
             'order' => 'ASC',
+            'hide_empty' => 1,
             'numberposts' => -1
         );
         $quotes = get_posts( $quotequery ); 
+
+        $list = array();
     ?>
 
     <?php foreach ( $quotes as $post ) : setup_postdata( $post ); ?>
 
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        <?php 
+        
+            if(in_array(get_the_title(), $list)){ continue; }
+            $list[] = get_the_title();
+        ?>
 
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        
     <?php endforeach;?>
+
+  <?php  wp_reset_postdata(); ?>
 
     <!-- Get the categories -->
     <h2>Categories</h2>
@@ -29,9 +40,10 @@
     <?php 
 
         $args = array(
-            'orderby' => 'title',
+            'orderby' => 'name',
             'order' => 'ASC',
-            'numberposts' => -1
+            'hide_empty' => 1, 
+            'number' => 9999
         ); 
         
         $cats = get_categories($args);
@@ -48,12 +60,15 @@
 
     <?php 
         $args = array(
+            'orderby' => 'slug',
             'order' => 'ASC', 
+            'hide_empty' => 1,
+            'number' => 9999
         ); 
+
         $tags = get_tags($args);
-        foreach ($tags as $tag) {           
-            $tag_id= $tag->term_id;
-            $tag_name= $tag->name; 
+        
+        foreach ($tags as $tag) { $tag_id = $tag->term_id; $tag_name = $tag->name; 
     
              echo '<a href="' . get_tag_link( $tag_id ) . '">'.$tag->name.'</a>';      
       } 

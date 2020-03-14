@@ -366,21 +366,52 @@ footer {
     padding-right: 10px;
     text-decoration: none; }
 
-.author-page {
+.submit-a-quote {
+  background-color: white;
+  font-size: 16px; }
+  .submit-a-quote form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .submit-a-quote label {
+    margin-bottom: 10px; }
+  .submit-a-quote input {
+    margin-bottom: 20px;
+    background-color: #D3D3D3;
+    border: 2px solid #00cc00;
+    border-radius: 2px;
+    height: 30px;
+    color: white; }
+
+#quote-form {
+  height: 60px; }
+
+#submit {
+  color: #00cc00;
+  width: 100px;
+  margin-top: 25px;
+  height: 30px;
+  padding: 2px 5px;
+  cursor: pointer; }
+
+.selected-author-page {
   margin-top: 1.25rem;
   margin-bottom: 1.5rem;
   font-family: Exo-Light, sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  display: inherit;
   color: white; }
-  .author-page .author-quote {
+  .selected-author-page .author-quote {
     margin-bottom: 1.25rem; }
-  .author-page .author {
+  .selected-author-page .author-author {
     margin-top: 3rem; }
-  .author-page a {
+  .selected-author-page a {
     color: brand-green; }
-  .author-page #quote-button {
+  .selected-author-page #quote-button {
     background: #222222;
     border: 2px solid #00cc00;
     color: #00cc00;
@@ -397,10 +428,12 @@ footer {
             flex-direction: column; }
 
 .selected-category-page {
-  background-color: orange;
-  background-color: pink;
-  background-color: white;
-  width: 600px; }
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-family: Exo-Light, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white; }
   .selected-category-page .selected-category-title {
     margin-top: 1px;
     font-size: 2rem; }
@@ -408,11 +441,10 @@ footer {
     border-top: 1px dotted white;
     border-color: red;
     margin-top: 40px; }
-  .selected-category-page .nav-links {
-    color: red; }
-    .selected-category-page .nav-links .selected-category-navigation {
-      background-color: yellowgreen;
-      color: red; }
+  .selected-category-page .line-bottom {
+    border-top: 1px dotted white;
+    border-color: blue;
+    margin-top: 40px; }
 
 .selected-tag-page {
   background-color: orange;

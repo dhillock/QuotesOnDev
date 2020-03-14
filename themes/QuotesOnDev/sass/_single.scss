@@ -1,43 +1,13 @@
 //
-// //
-// .selected-author-page {
-//     background-color: orange;
-//     background-color: pink;
-//     background-color: white;
-//     width: 600px;
+// 
 
-
-//     .selected-author-title {
-//         margin-top: 1px;
-//         font-size: 2rem;
-//     }
-
-//     .line-top {
-//         border-top: 1px dotted white;
-//         border-color: red;
-//         margin-top: 40px;
-//     }
-
-//     .nav-links {
-//         color: red;
-
-//         .selected-author-navigation {
-//             background-color: yellowgreen;
-//             color: red;
-//         }
-
-//     }
-
-// }
-
-.author-page {
+.selected-author-page {
     // background-color: green;
     margin-top: 1.25rem;
     margin-bottom: 1.5rem;
     font-family: $base-font-text;
     font-size: 1.25rem;
     font-weight: 400;
-    display: inherit;
 
     color: white;
 
@@ -45,7 +15,7 @@
         margin-bottom: 1.25rem;
     }
 
-    .author {
+    .author-author {
         margin-top: 3rem;
     }
 

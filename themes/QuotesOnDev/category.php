@@ -11,7 +11,7 @@
             'post_type' => 'post', 
             'orderby' => 'title',
             'order' => 'ASC',
-            'posts_per_page' => 3
+            'posts_per_page' => -1
             );
         $quotes = get_posts( $args ); 
 
@@ -19,14 +19,30 @@
 
     <?php foreach ( $quotes as $post ) : setup_postdata( $post ); ?>
 
-        <div class="category-quote">
-            <?php the_content(); ?> 
-        </div>
+    <div class="category-quote">
+        <?php the_content(); ?> 
+    </div>
 
-        <span class="category-author"> - <?php the_title(); ?></span>
+
+
+    <span class="category-author">- <?php echo the_title() . ", "; ?></span>
+
+
+<!-- <php
+
+ we can use this to display or not display the , after the author's name
+
+ echo get_post_meta( get_the_ID(), '_qod_quote_source', true );
+
+?> -->
+
+
+    <a href ="<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>">
         <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>
+    </a>
 
-        <hr class = 'line-bottom'>
+
+    <hr class = 'line-bottom'>
 
     <?php endforeach;?>
 
