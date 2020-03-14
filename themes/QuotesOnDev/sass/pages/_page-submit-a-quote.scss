@@ -1,0 +1,40 @@
+.submit-a-quote {
+    background-color: pink;
+    font-size: 16px;
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    input {
+        margin-bottom: 20px;
+        background-color: $color-input-background;
+        border: 2px solid $brand-green;
+        border-radius: 2px;
+        height: 30px;
+        color: white;
+    }
+}
+
+#quote-form {
+    height: 60px;
+}
+
+#submit {
+    color: $brand-green;
+    width: 100px;
+    margin-top: 25px;
+    height: 30px;
+    padding: 2px 5px;
+    cursor: pointer;
+
+    // &:hover {
+    //     color: #090;
+    // }
+}
