@@ -268,7 +268,8 @@ body {
   body a {
     color: #00cc00; }
     body a:hover {
-      color: hotpink; }
+      color: hotpink;
+      cursor: p; }
 
 @font-face {
   font-family: 'Exo-Light';
@@ -373,6 +374,8 @@ footer .menu-item-218 a {
     font-size: 1rem;
     margin-top: 3rem;
     padding: 15px 30px; }
+    .random-quote-home-page #quote-button:hover {
+      cursor: pointer; }
 
 .about {
   margin-top: 3rem;
@@ -518,9 +521,6 @@ footer .menu-item-218 a {
     margin-top: 40px; }
 
 .selected-tag-page {
-  background-color: orange;
-  background-color: pink;
-  background-color: white;
   width: 600px; }
   .selected-tag-page .selected-tag-title {
     margin-top: 1px;

@@ -7,23 +7,6 @@
     <hr class = 'line-top'>
 
     <?php
-        // $args = array( 
-        //     'post_type' => 'post', 
-        //     'orderby' => 'ASC',
-        //     'numberposts' => 3
-        //     );
-
-        // $args = get_terms(array(
-
-        //     'posts_per_page' => 2,
-        //     'post_type' => 'post', 
-        //     'orderby' => 'ASC',
-        //     'tag' => single_term_title( '', false ),
-        //     'hide_empty' => false,
-        // ));
-
-        // $quotes = get_posts( $args ); 
-
 
         $args = array( 
             'post_type' => 'post', 
@@ -33,6 +16,15 @@
             'posts_per_page' => 4
             );
 
+
+        $args = array(
+            'orderby' => 'slug',
+            'order' => 'ASC', 
+            'hide_empty' => 1,
+            'number' => 999
+        ); 
+
+            
         $quotes = get_posts( $args ); 
     ?>
 

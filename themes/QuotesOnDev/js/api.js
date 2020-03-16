@@ -13,6 +13,11 @@
         red_vars.rest_url +
         'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1'
     }).done(function(data) {
+      //
+      $(homeQuote).empty();
+      $(authorQuote).empty();
+      $(homeSource).empty();
+
       $.each(data, function(index, value) {
         //
         // console.log(value, 'value');
@@ -25,7 +30,13 @@
 
         // HTML
         $(homeQuote).html(quote);
-        $(authorQuote).append('— ', author, '');
+
+        if (sourceURL || source) {
+          $(authorQuote).append('&mdash;&nbsp;', author, ',&nbsp;');
+        } else {
+          $(authorQuote).append('&mdash;&nbsp;', author, '');
+        }
+
         //
         // $(sourceLink).prop('href', sourceURL);
         // $(sourceLink).append(source, ' ');
@@ -33,17 +44,15 @@
         // If the quote has a source
         if (sourceURL) {
           $(homeSource).append(
-            `<a href="${sourceURL}"class="source-link" target="new"><span class="source">${source}</span></a>`
+            `<a href="${sourceURL}"class="source-link" target="new"> <span class="source">${source}</span> </a>`
           );
         } else {
           $(homeSource).append(`<span class="source">${source}</span>`);
         }
-      }); // Closing for each loop
+      }); // Closing foreach loop
     }); // Closing done function
-    $(homeQuote).empty();
-    $(authorQuote).empty();
-    $(homeSource).empty();
-  }); // Closing event listener (generate quote)
+    //empties were here
+  }); // Closing event listener - waiting for the quote button to be clicked
 
   ///////////////////////////////////////////////////
   ////////////////// Submit a Quote ////////////////
@@ -87,4 +96,5 @@
         alert('Error: There was an error adding the quote');
       });
   }); // Closing .event listener (generate quote)
+  //
 })(jQuery); // Closing document ready function

@@ -16,9 +16,10 @@
 
         <!-- Display the random quote (the content) -->
         <div class="home-quote">
-            <q>
+            <p>
                 <?php the_content(); ?> 
-            </q>
+            </p>
+
         </div>
 
         <div class="quote-section">
@@ -27,44 +28,41 @@
             <?php $quotesource = trim( get_post_meta( get_the_ID(), '_qod_quote_source', true ) ); ?>
             <?php  if( ! empty( $quotesource ) ){ ?>
 
-                <span class="author">— <?php echo the_title() . ",&nbsp;"; ?></span>
+                <span class="author"> &mdash; <?php echo the_title() . ",&nbsp;"; ?></span>
 
-                <!-- if there is a source and a link, do the "a" tag, otherwise, no a tag -->
+                <!-- if there is a source AND a link, do the "a" tag, otherwise, no a tag -->
                 <?php $sourceurl = trim( get_post_meta( get_the_ID(), '_qod_quote_source_url', true ) ); ?>
-                <!-- <?php echo 'hello: ' . $sourceurl ?> -->
+
 
                 <?php  if( ! empty( $sourceurl ) ){ ?>
 
                     <div class="source">
 
-                        <a href="class="source-link" target="new" <?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>" > 
-                
-                        <span><?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></a></span>
+                  
+                            <a class = "source-link" target = "new" href  = "<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>" > 
+
+                            <span> <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></a> </span>
 
                     </div>
 
+                <?php } else { ?>     
 
-               <?php } else { ?>
+                    <div class="source">
+                        <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>
+                    </div>
 
-                    <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>
-
-               <?php } ?>
-
-
-
-                
-
+                <?php } ?>
 
             <?php } else { ?>
 
-                <span class="author">— <?php echo the_title() ; ?></span>
+                <p class="author"> &mdash;
+                    <?php echo the_title() ; ?>
+                </p>
 
             <?php } ?>
 
-
-
         </div>
-        
+
     <?php endforeach;?>
 
     <!-- The random quote generator button -->
