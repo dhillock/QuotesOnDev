@@ -252,10 +252,10 @@ body {
   margin: 0 auto;
   max-width: 1080px;
   padding: 2.5%;
-  width: 100%;
   background: #222222;
   font-family: Exo-Light, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: white; }
   body h1,
   body h2,
   body h3,
@@ -264,8 +264,7 @@ body {
   body h6 {
     clear: both;
     font-family: Exo-Medium, sans-serif;
-    color: #ffffff;
-    letter-spacing: 2px; }
+    color: #ffffff; }
   body a {
     color: #00cc00; }
     body a:hover {
@@ -308,25 +307,50 @@ header {
       display: block;
       width: 300px; }
 
-footer {
-  margin-top: 6rem; }
-  footer .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  footer .company-info p,
-  footer .company-info a {
-    display: inline; }
-  footer p {
-    color: white; }
-  footer a {
-    color: #00cc00;
-    text-decoration: none; }
-  footer #menu-item-210 a {
-    color: yellow; }
+footer .company-info p,
+footer .company-info a {
+  display: inline; }
+
+footer p {
+  color: white; }
+
+footer a {
+  color: #00cc00;
+  text-decoration: none; }
+
+footer .the-menu {
+  margin-top: 4.5rem;
+  margin-bottom: 1rem; }
+
+footer .menu {
+  margin-top: 4.5rem 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+footer .menu-item-210 a {
+  width: 143px;
+  padding-right: 1rem;
+  border-right: 1px solid #ffffff; }
+
+footer .menu-item-215 a {
+  width: 143px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid #ffffff; }
+
+footer .menu-item-218 a {
+  width: 143px;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .search-results {
-  background-color: white; }
+  margin-top: 1.5rem; }
+  .search-results .the-author {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+  .search-results .pagination {
+    margin-top: 1.5rem; }
 
 .random-quote-home-page {
   color: white; }
@@ -416,6 +440,8 @@ footer {
     margin-bottom: 20px; }
   .page-not-found h2 {
     font-family: Exo-Light, sans-serif;
+    font-family: Exo-Light;
+    font-weight: 400;
     font-size: 1rem;
     margin-top: 16px;
     margin-bottom: 24px; }
@@ -430,7 +456,7 @@ footer {
 .search-form .search-input {
   background-color: transparent;
   background-color: #222222;
-  width: 240px;
+  width: 260px;
   border: 2px solid #00cc00;
   border-radius: 3px;
   margin-bottom: 1.5rem;

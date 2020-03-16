@@ -11,13 +11,20 @@
     <?php if( have_posts() )  
         while( have_posts() ) : the_post(); ?>
 
-            <a href="<?php the_permalink() ?>"><?php the_title();?></a>
+            <div class = 'the-author'>
+                <a  href="<?php the_permalink() ?>"><?php the_title();?></a>
+            </div
+
             <p><?php the_content() ?></p>
 
             
         <?php endwhile;?>
 
-    <?php the_posts_navigation();?>
+   <?php the_posts_pagination(array (
+        'prev_text' => __( 'Prev' ),
+        'next_text' => __( 'Next' ),  
+        'screen_reader_text' => __('  ')
+    ));?>
 
 </div>
 

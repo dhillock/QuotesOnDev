@@ -21,21 +21,49 @@
             </q>
         </div>
 
-    <div class="quote-section">
+        <div class="quote-section">
 
-        <!-- add, If there is a source, add a ",&nbsp;" after the author name...otherwise, don't add it -->
+            <!-- If there is a source, put a comma and a space after the author's name -->
+            <?php $quotesource = trim( get_post_meta( get_the_ID(), '_qod_quote_source', true ) ); ?>
+            <?php  if( ! empty( $quotesource ) ){ ?>
 
-        <span class="author">— <?php echo the_title() . ",&nbsp;"; ?></span>
+                <span class="author">— <?php echo the_title() . ",&nbsp;"; ?></span>
 
-        <div class="source">
+                <!-- if there is a source and a link, do the "a" tag, otherwise, no a tag -->
+                <?php $sourceurl = trim( get_post_meta( get_the_ID(), '_qod_quote_source_url', true ) ); ?>
+                <!-- <?php echo 'hello: ' . $sourceurl ?> -->
 
-            <a href="class="source-link" target="new" <?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>" > 
-        
-            <span><?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></a></span>
+                <?php  if( ! empty( $sourceurl ) ){ ?>
+
+                    <div class="source">
+
+                        <a href="class="source-link" target="new" <?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>" > 
+                
+                        <span><?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></a></span>
+
+                    </div>
+
+
+               <?php } else { ?>
+
+                    <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>
+
+               <?php } ?>
+
+
+
+                
+
+
+            <?php } else { ?>
+
+                <span class="author">— <?php echo the_title() ; ?></span>
+
+            <?php } ?>
+
+
 
         </div>
-
-    </div>
         
     <?php endforeach;?>
 

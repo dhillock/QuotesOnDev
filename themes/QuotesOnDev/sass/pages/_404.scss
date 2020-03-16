@@ -6,7 +6,6 @@
 
     h1 {
         font-family: $base-font-heading;
-
         font-size: 2rem;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -14,6 +13,8 @@
 
     h2 {
         font-family: $base-font-text;
+        font-family: Exo-Light;
+        font-weight: 400;
         font-size: 1rem;
         margin-top: 16px;
         margin-bottom: 24px;
@@ -38,7 +39,7 @@
     .search-input {
         background-color: transparent;
         background-color: #222222;
-        width: 240px;
+        width: 260px;
         border: 2px solid $brand-green;
         border-radius: 3px;
 

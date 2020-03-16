@@ -20,6 +20,12 @@
     <a href="https://redacademy.com/vancouver/">RED Academy</a> 
 </div>
 
+   <?php echo '1 dhsource: ' . trim( get_post_meta( get_the_ID(), '_qod_quote_source', true ) ); ?>
+
+    <?php echo '2 dhurl: ' . trim( get_post_meta( get_the_ID(), '_qod_quote_source_url', true ) ); ?>
+
+
+
   </footer>
 
 </body>

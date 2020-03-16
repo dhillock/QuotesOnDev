@@ -12,11 +12,12 @@ body {
   margin: $base-margin;
   max-width: 1080px;
   padding: 2.5%;
-  width: 100%;
+  // width: 100%;
 
   background: $color-main-background;
   font-family: $font-main;
   line-height: $base-line-height;
+  color: white;
 
   h1,
   h2,
@@ -27,7 +28,7 @@ body {
     clear: both;
     font-family: $base-font-heading;
     color: $color-heading;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
 
   }
 

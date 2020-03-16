@@ -1,3 +1,16 @@
 .search-results {
-    background-color: white;
+    // background-color: white;
+    margin-top: $base-spacing;
+
+    .the-author {
+        // background-color: blue;
+        margin-top: $base-spacing;
+        margin-bottom: $base-spacing;
+    }
+
+    .pagination {
+        // background-color: yellow;
+        margin-top: $base-spacing;
+    }
+
 }
