@@ -299,14 +299,23 @@ body {
   font-weight: 500;
   font-style: italic; }
 
-header {
-  background-color: #222222;
-  margin-top: 3rem; }
-  header .image-wrapper {
-    max-width: 100%; }
-    header .image-wrapper img {
-      display: block;
-      width: 300px; }
+#quote-button {
+  background: #222222;
+  border: 2px solid #00cc00;
+  color: #00cc00;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 3rem;
+  padding: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #quote-button:hover {
+    cursor: pointer; }
 
 footer .company-info p,
 footer .company-info a {
@@ -345,6 +354,27 @@ footer .menu-item-218 a {
   padding-left: 1rem;
   padding-right: 1rem; }
 
+header {
+  background-color: #222222;
+  margin-top: 3rem; }
+  header .image-wrapper {
+    max-width: 100%; }
+    header .image-wrapper img {
+      display: block;
+      width: 300px; }
+
+.nav-links .page-numbers {
+  color: red; }
+
+.nav-links .current {
+  color: yellow; }
+
+.nav-links .prev {
+  color: orange; }
+
+.nav-links:hover {
+  cursor: pointer; }
+
 .search-results {
   margin-top: 1.5rem; }
   .search-results .the-author {
@@ -366,16 +396,6 @@ footer .menu-item-218 a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .random-quote-home-page #quote-button {
-    background: #222222;
-    border: 2px solid #00cc00;
-    color: #00cc00;
-    font-weight: 400;
-    font-size: 1rem;
-    margin-top: 3rem;
-    padding: 15px 30px; }
-    .random-quote-home-page #quote-button:hover {
-      cursor: pointer; }
 
 .about {
   margin-top: 3rem;
@@ -485,21 +505,6 @@ footer .menu-item-218 a {
     margin-top: 3rem; }
   .selected-author-page a {
     color: brand-green; }
-  .selected-author-page #quote-button {
-    background: #222222;
-    border: 2px solid #00cc00;
-    color: #00cc00;
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 15px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
 
 .selected-category-page {
   margin-top: 1.25rem;
@@ -533,4 +538,5 @@ footer .menu-item-218 a {
     color: red; }
     .selected-tag-page .nav-links .selected-tag-navigation {
       background-color: yellowgreen;
+      background-color: blue;
       color: red; }

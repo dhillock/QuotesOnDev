@@ -1,0 +1,21 @@
+.nav-links {
+
+    // background-color: blue;
+
+    .page-numbers {
+        color: red;
+    }
+
+    .current {
+        color: yellow;
+    }
+
+    .prev {
+        color: orange;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}

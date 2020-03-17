@@ -15,10 +15,13 @@ Text Domain: quotes_on_dev
 @import 'base/base';
 @import 'base/typography';
 
-@import 'layout/header';
+@import 'components/buttons';
+
 @import 'layout/footer';
-@import 'layout/searchform';
+@import 'layout/header';
+@import 'layout/navigation';
 @import 'layout/search';
+@import 'layout/searchform';
 
 @import 'pages/page-front';
 @import 'pages/page-about';

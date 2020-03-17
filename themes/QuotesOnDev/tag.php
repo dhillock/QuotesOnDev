@@ -6,16 +6,7 @@
 
     <hr class = 'line-top'>
 
-    <?php
-
-        $args = array( 
-            'post_type' => 'post', 
-            'tag' => single_term_title( '', false ),
-            'orderby' => 'title',
-            'order' => 'ASC',
-            'posts_per_page' => 4
-            );
-
+    <!-- <?php
 
         $args = array(
             'orderby' => 'slug',
@@ -26,13 +17,19 @@
 
             
         $quotes = get_posts( $args ); 
-    ?>
+    ?> -->
 
     <?php foreach ( $quotes as $post ) : setup_postdata( $post ); ?>
 
         <div class="tag-quote">
             <?php the_content(); ?> 
         </div>
+
+<?php
+    $tag = get_queried_object();
+    echo $tag->slug
+?>
+
 
         <span class="tag-author"> - <?php the_title(); ?></span>
         <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>

@@ -1,0 +1,18 @@
+//
+//
+#quote-button {
+    background: $color-main-background;
+    // background-color: yellow;
+    border: 2px solid $brand-green;
+    color: $brand-green;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 3rem;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

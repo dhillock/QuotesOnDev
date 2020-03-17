@@ -25,7 +25,7 @@
 
 
 
-    <span class="category-author">- <?php echo the_title() . ", "; ?></span>
+    <span class="category-author"> &mdash; <?php echo the_title() . ", "; ?></span>
 
 
 <!-- <php

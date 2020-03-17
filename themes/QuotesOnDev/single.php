@@ -2,6 +2,16 @@
 
 <section class = 'selected-author-page'>
 
+    <?php
+        $args = array( 
+            'post_type' => 'post', 
+            'orderby' => 'rand',
+            'numberposts' => 9999
+            );
+        $quotes = get_posts( $args ); 
+    ?>
+
+
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
@@ -23,7 +33,7 @@
         <?php the_content(); ?> 
     </div>
 
-    <span class="author-author">- <?php echo the_title() . ", "; ?></span>
+    <span class="author-author"> &mdash; <?php echo the_title() . ", "; ?></span>
 
     <!-- <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?> -->
     <!-- <?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?> -->

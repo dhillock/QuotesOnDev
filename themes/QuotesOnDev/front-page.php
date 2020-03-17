@@ -30,19 +30,14 @@
 
                 <span class="author"> &mdash; <?php echo the_title() . ",&nbsp;"; ?></span>
 
-                <!-- if there is a source AND a link, do the "a" tag, otherwise, no a tag -->
+                <!-- if there is a source AND a link, add an "a" tag, otherwise, no a tag -->
                 <?php $sourceurl = trim( get_post_meta( get_the_ID(), '_qod_quote_source_url', true ) ); ?>
-
 
                 <?php  if( ! empty( $sourceurl ) ){ ?>
 
                     <div class="source">
-
-                  
                             <a class = "source-link" target = "new" href  = "<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>" > 
-
                             <span> <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></a> </span>
-
                     </div>
 
                 <?php } else { ?>     
