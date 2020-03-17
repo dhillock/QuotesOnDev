@@ -6,7 +6,7 @@
     <h1>Archives</h1>
 
     <!-- Get the quote authors -->
-    <h2>Quote Authors</h2>
+    <h2 class = 'the-author'>Quote Authors</h2>
 
     <?php
         $quotequery = array( 

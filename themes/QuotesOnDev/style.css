@@ -477,6 +477,7 @@ header {
 
 @media (min-width: 1080px) {
   .site-main {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -509,7 +510,7 @@ header {
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
-        font-size: 7rem;
+        font-size: 125px;
         color: #00cc00; }
       .site-main .type-page::after {
         content: '\f10e';
@@ -520,7 +521,7 @@ header {
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
-        font-size: 7rem;
+        font-size: 125px;
         color: #00cc00; } }
 
 .archive-page {
@@ -535,6 +536,31 @@ header {
     font-family: Exo-Light, sans-serif;
     padding-right: 10px;
     text-decoration: none; }
+  @media (min-width: 1080px) {
+    .archive-page {
+      width: 666px;
+      max-width: 1080px;
+      margin: 0 auto; }
+      .archive-page a {
+        font-size: 1.25rem; }
+      .archive-page::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        top: 275px;
+        left: 50px;
+        font-size: 125px;
+        color: #00cc00; }
+      .archive-page::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        top: 275px;
+        right: 50px;
+        font-size: 125px;
+        color: #00cc00; } }
 
 .submit-a-quote {
   font-size: 1rem; }

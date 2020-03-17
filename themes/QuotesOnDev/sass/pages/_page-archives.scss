@@ -19,4 +19,46 @@
     padding-right: 10px;
     text-decoration: none;
   }
+
+  @include desktop {
+    // background-color: yellow;
+    width: 666px;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    a {
+      font-size: 1.25rem;
+    }
+
+
+    &::before {
+
+      content: '\f10d';
+      font-family: 'FontAwesome';
+      font-weight: 700;
+      position: absolute;
+      top: 275px;
+      left: 50px;
+
+
+      // transform: translateY(-50%);
+      font-size: 125px;
+      color: $brand-green;
+    }
+
+    &::after {
+      content: '\f10e';
+      font-family: 'FontAwesome';
+      font-weight: 700;
+      position: absolute;
+      top: 275px;
+      right: 50px;
+
+      // transform: translateY(-50%);
+      font-size: 125px;
+      color: $brand-green;
+    }
+
+  }
+
 }
