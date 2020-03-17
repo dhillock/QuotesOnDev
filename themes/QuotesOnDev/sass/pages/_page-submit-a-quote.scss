@@ -8,6 +8,12 @@
         margin-bottom: 1.3rem;
     }
 
+    h2 {
+        // background-color: red;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
     form {
         display: flex;
@@ -44,4 +50,16 @@
         font-size: 1rem;
         cursor: pointer;
     }
+
+    #form-author,
+    #form-source,
+    #form-url {
+        width: 60%;
+    }
+
+    #form-quote {
+        height: 90px;
+    }
+
+
 }

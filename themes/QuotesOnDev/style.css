@@ -549,7 +549,7 @@ header {
         font-weight: 700;
         position: absolute;
         top: 275px;
-        left: 50px;
+        left: 25px;
         font-size: 125px;
         color: #00cc00; }
       .archive-page::after {
@@ -558,7 +558,7 @@ header {
         font-weight: 700;
         position: absolute;
         top: 275px;
-        right: 50px;
+        right: 25px;
         font-size: 125px;
         color: #00cc00; } }
 
@@ -568,6 +568,10 @@ header {
     font-size: 2rem;
     margin-top: 3rem;
     margin-bottom: 1.3rem; }
+  .submit-a-quote h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
   .submit-a-quote form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -598,6 +602,12 @@ header {
     padding: 2px 5px;
     font-size: 1rem;
     cursor: pointer; }
+  .submit-a-quote #form-author,
+  .submit-a-quote #form-source,
+  .submit-a-quote #form-url {
+    width: 60%; }
+  .submit-a-quote #form-quote {
+    height: 90px; }
 
 .page-not-found {
   font-family: Exo-Light, sans-serif;
@@ -614,6 +624,31 @@ header {
     font-size: 1rem;
     margin-top: 16px;
     margin-bottom: 24px; }
+  @media (min-width: 1080px) {
+    .page-not-found {
+      width: 666px;
+      max-width: 1080px;
+      margin: 0 auto; }
+      .page-not-found a {
+        font-size: 1.25rem; }
+      .page-not-found::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        top: 175px;
+        left: 25px;
+        font-size: 125px;
+        color: #00cc00; }
+      .page-not-found::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        top: 175px;
+        right: 25px;
+        font-size: 125px;
+        color: #00cc00; } }
 
 .search-form .search-field {
   margin-left: 0px; }
@@ -672,6 +707,31 @@ header {
     border-top: 1px dotted white;
     margin-top: 40px;
     margin-bottom: 20px; }
+  @media (min-width: 1080px) {
+    .selected-category-page {
+      width: 666px;
+      max-width: 1080px;
+      margin: 0 auto; }
+      .selected-category-page a {
+        font-size: 1.25rem; }
+      .selected-category-page::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        top: 200px;
+        left: 25px;
+        font-size: 125px;
+        color: #00cc00; }
+      .selected-category-page::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        font-size: 125px;
+        color: #00cc00; } }
 
 .selected-tag-page {
   width: 600px; }

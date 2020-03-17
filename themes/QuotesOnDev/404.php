@@ -3,6 +3,7 @@
 <div class="page-not-found">
 
     <h1>Oops!</h1>
+    
     <h2>It looks like nothing was found at this location. Maybe try a search?</h2>
 
     <div class="page-search">
