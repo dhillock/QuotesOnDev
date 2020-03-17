@@ -1,9 +1,9 @@
 (function($) {
   // Generate a random quote, on the home page. These classes must match those in front-page.php
-  const homeQuote = $('.home-quote');
-  const authorQuote = $('.author');
-  const homeSource = $('.source');
-  const sourceLink = $('.source-link');
+  const ClassHomeQuote = $('.home-quote');
+  const ClassAuthor = $('.author');
+  const ClassSource = $('.source');
+  const ClassSourceLink = $('.source-link');
 
   // The listener - wait for the quote-button to be clicked
   $('#quote-button').on('click', function(e) {
@@ -14,9 +14,10 @@
         'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1'
     }).done(function(data) {
       //
-      $(homeQuote).empty();
-      $(authorQuote).empty();
-      $(homeSource).empty();
+      $(ClassHomeQuote).empty();
+      $(ClassAuthor).empty();
+      $(ClassSource).empty();
+      $(ClassSourceLink).empty();
 
       $.each(data, function(index, value) {
         //
@@ -29,25 +30,30 @@
         let sourceURL = value._qod_quote_source_url;
 
         // HTML
-        $(homeQuote).html(quote);
+        $(ClassHomeQuote).html(quote);
+
+        // $('p')
+        //   .contents()
+        //   .unwrap()
+        //   .wrap('<q/>');
 
         if (sourceURL || source) {
-          $(authorQuote).append('&mdash;&nbsp;', author, ',&nbsp;');
+          $(ClassAuthor).append('&mdash;&nbsp;', author, ',&nbsp;');
         } else {
-          $(authorQuote).append('&mdash;&nbsp;', author, '');
+          $(ClassAuthor).append('&mdash;&nbsp;', author, '');
         }
 
         //
-        // $(sourceLink).prop('href', sourceURL);
-        // $(sourceLink).append(source, ' ');
+        // $(ClassSourceLink).prop('href', sourceURL);
+        // $(ClassSourceLink).append(source, ' ');
 
         // If the quote has a source
         if (sourceURL) {
-          $(homeSource).append(
+          $(ClassSource).append(
             `<a href="${sourceURL}"class="source-link" target="new"> <span class="source">${source}</span> </a>`
           );
         } else {
-          $(homeSource).append(`<span class="source">${source}</span>`);
+          $(ClassSource).append(`<span class="source">${source}</span>`);
         }
       }); // Closing foreach loop
     }); // Closing done function

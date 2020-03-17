@@ -16,6 +16,7 @@
 
         <!-- Display the random quote (the content) -->
         <div class="home-quote">
+
             <q>
                 <?php the_content(); ?> 
             </q>

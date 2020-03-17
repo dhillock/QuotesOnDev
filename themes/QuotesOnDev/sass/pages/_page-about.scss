@@ -1,18 +1,64 @@
-.about {
-    margin-top: 3rem;
-    line-height: 1.5em;
-    font-size: 16px;
-    color: $color-text;
+.content-area {
+  .site-main {
+    .entry-header {
+      .entry-title {
+        color: #ffffff;
+      }
+    }
 
-    h1 {
-        font-size: 2em;
-        margin-top: 3rem;
-        margin-bottom: 1.3rem;
+    .entry-content {
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .site-main {
+    display: flex;
+    flex-direction: column;
+
+    .entry-header {
+      //   background-color: blue;
+      margin-top: 1px;
+      margin-bottom: 1px;
+    }
+
+    .about-quotes {
+      margin-top: 25px;
+    }
+
+    .type-page {
+      position: relative;
+      display: flex;
+      flex-flow: column wrap;
+      padding-right: 10rem;
+      padding-left: 10rem;
+
+      &::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
         font-weight: 700;
-        line-height: 2rem;
-    }
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 7rem;
+        color: $brand-green;
+      }
 
-    p {
-        margin: 25px 0;
+      &::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 7rem;
+        color: $brand-green;
+      }
     }
+  }
 }

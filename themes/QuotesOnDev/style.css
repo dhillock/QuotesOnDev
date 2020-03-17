@@ -433,25 +433,95 @@ header {
     display: flex; }
   @media (min-width: 1080px) {
     .random-quote-home-page p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 4.5rem 175px 1.5rem; }
+    .random-quote-home-page .author {
+      margin-left: 300px; }
+    .random-quote-home-page q::before {
+      content: '\F10d';
+      font-family: 'FontAwesome';
+      font-weight: 900;
+      font-size: 125px;
+      color: #00cc00;
+      margin-top: 35px; }
+    .random-quote-home-page q::after {
+      content: '\F10e';
+      font-family: 'FontAwesome';
+      font-weight: 900;
+      font-size: 125px;
+      color: #00cc00;
+      margin-top: 35px; }
+    .random-quote-home-page q {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .random-quote-home-page p {
       font-size: 2.5rem; }
     .random-quote-home-page .author {
       font-size: 1.25rem; }
     .random-quote-home-page .source {
       font-size: 1.25rem; } }
 
-.about {
-  margin-top: 3rem;
-  line-height: 1.5em;
-  font-size: 16px;
+.content-area .site-main .entry-header .entry-title {
   color: #ffffff; }
-  .about h1 {
-    font-size: 2em;
-    margin-top: 3rem;
-    margin-bottom: 1.3rem;
-    font-weight: 700;
-    line-height: 2rem; }
-  .about p {
-    margin: 25px 0; }
+
+.content-area .site-main .entry-content p {
+  color: #ffffff; }
+
+@media (min-width: 1080px) {
+  .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .site-main .entry-header {
+      margin-top: 1px;
+      margin-bottom: 1px; }
+    .site-main .about-quotes {
+      margin-top: 25px; }
+    .site-main .type-page {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      padding-right: 10rem;
+      padding-left: 10rem; }
+      .site-main .type-page::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        font-size: 7rem;
+        color: #00cc00; }
+      .site-main .type-page::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 700;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        font-size: 7rem;
+        color: #00cc00; } }
 
 .archive-page {
   padding-bottom: 75px;
