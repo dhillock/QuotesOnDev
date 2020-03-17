@@ -13,6 +13,13 @@
 
     &:hover {
         cursor: pointer;
-        color: blue;
+        color: yellow;
+    }
+
+    @include desktop {
+        width: 22%;
+        margin-left: 39%;
+        margin-right: 39%;
+
     }
 }

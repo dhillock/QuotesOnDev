@@ -1,5 +1,6 @@
 header {
   background-color: $color-main-background;
+
   margin-top: 3rem;
 
   .image-wrapper {
@@ -15,7 +16,12 @@ header {
 
       @include desktop {
         width: 700px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
     }
+
+
   }
 }

@@ -3,6 +3,7 @@ footer {
   .company-info p,
   .company-info a {
     display: inline;
+
   }
 
   p {
@@ -21,6 +22,7 @@ footer {
 
   .menu {
     margin-top: 4.5rem 0 3rem;
+    margin-bottom: 15px;
     display: flex;
 
   }
@@ -44,5 +46,29 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  @include tablet {
+
+    .the-menu {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .menu-item-218 {
+      border-right: 1px solid #ffffff;
+    }
+
+    p {
+      margin-left: 20px;
+    }
+  }
+
+  @include desktop {
+    .the-menu {
+      justify-content: flex-end;
+    }
+  }
+
+
 
 }

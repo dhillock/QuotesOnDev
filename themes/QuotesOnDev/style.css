@@ -276,9 +276,6 @@ body {
     body a:hover {
       color: hotpink;
       cursor: pointer; }
-  @media (min-width: 600) {
-    body {
-      background-color: pink; } }
 
 @font-face {
   font-family: 'Exo-Light';
@@ -323,7 +320,12 @@ body {
           flex-direction: column; }
   #quote-button:hover {
     cursor: pointer;
-    color: blue; }
+    color: yellow; }
+  @media (min-width: 1080px) {
+    #quote-button {
+      width: 22%;
+      margin-left: 39%;
+      margin-right: 39%; } }
 
 footer .company-info p,
 footer .company-info a {
@@ -342,6 +344,7 @@ footer .the-menu {
 
 footer .menu {
   margin-top: 4.5rem 0 3rem;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -362,6 +365,26 @@ footer .menu-item-218 a {
   padding-left: 1rem;
   padding-right: 1rem; }
 
+@media (min-width: 600px) {
+  footer .the-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  footer .menu-item-218 {
+    border-right: 1px solid #ffffff; }
+  footer p {
+    margin-left: 20px; } }
+
+@media (min-width: 1080px) {
+  footer .the-menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
+
 header {
   background-color: #222222;
   margin-top: 3rem; }
@@ -370,12 +393,14 @@ header {
     header .image-wrapper img {
       display: block;
       width: 300px; }
-      @media (min-width: 600) {
+      @media (min-width: 600px) {
         header .image-wrapper img {
           width: 500px; } }
-      @media (min-width: 1080) {
+      @media (min-width: 1080px) {
         header .image-wrapper img {
-          width: 700px; } }
+          width: 700px;
+          margin-left: auto;
+          margin-right: auto; } }
 
 .search-results {
   margin-top: 1.5rem; }
@@ -406,6 +431,13 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  @media (min-width: 1080px) {
+    .random-quote-home-page p {
+      font-size: 2.5rem; }
+    .random-quote-home-page .author {
+      font-size: 1.25rem; }
+    .random-quote-home-page .source {
+      font-size: 1.25rem; } }
 
 .about {
   margin-top: 3rem;

@@ -52,9 +52,13 @@ body {
     }
   }
 
-  @include tablet {
-    background-color: pink;
-  }
+  // @include tablet {
+  //   background-color: pink;
+  // }
+
+  // @include desktop {
+  //   background-color: green;
+  // }
 
 }
 
