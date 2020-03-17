@@ -1,40 +1,47 @@
 .submit-a-quote {
-    background-color: pink;
-    font-size: 16px;
+    // background-color: pink;
+    font-size: 1rem;
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1.3rem;
+    }
 
 
     form {
         display: flex;
         flex-direction: column;
+        // background-color: red;
+
     }
 
     label {
         margin-bottom: 10px;
+        font-size: 1rem;
+        // background-color: red;
     }
 
     input {
+        font-size: 1rem;
         margin-bottom: 20px;
-        background-color: $color-input-background;
+        background-color: $color-background-input;
+        background-color: black;
         border: 2px solid $brand-green;
         border-radius: 2px;
         height: 30px;
         color: white;
+        cursor: text;
     }
-}
 
-#quote-form {
-    height: 60px;
-}
-
-#submit {
-    color: $brand-green;
-    width: 100px;
-    margin-top: 25px;
-    height: 30px;
-    padding: 2px 5px;
-    cursor: pointer;
-
-    // &:hover {
-    //     color: #090;
-    // }
+    #submit {
+        color: $brand-green;
+        background-color: $color-main-background;
+        width: 150px;
+        margin-top: 25px;
+        height: 30px;
+        padding: 2px 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
 }

@@ -6,7 +6,7 @@
 
     <hr class = 'line-top'>
 
-    <!-- <?php
+    <?php
 
         $args = array(
             'orderby' => 'slug',
@@ -14,10 +14,9 @@
             'hide_empty' => 1,
             'number' => 999
         ); 
-
             
         $quotes = get_posts( $args ); 
-    ?> -->
+    ?> 
 
     <?php foreach ( $quotes as $post ) : setup_postdata( $post ); ?>
 

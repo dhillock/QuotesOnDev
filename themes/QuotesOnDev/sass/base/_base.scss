@@ -12,7 +12,6 @@ body {
   margin: $base-margin;
   max-width: 1080px;
   padding: 2.5%;
-  // width: 100%;
 
   background: $color-main-background;
   font-family: $font-main;
@@ -32,20 +31,31 @@ body {
 
   }
 
+
+  h1 {
+
+    font-size: 2em;
+    margin-top: 48px;
+    margin-bottom: 21px;
+    font-weight: 700;
+    line-height: 48px;
+
+  }
+
+
   a {
     color: $color-link;
 
     &:hover {
       color: hotpink;
-      cursor: p;
+      cursor: pointer;
     }
+  }
+
+  @include tablet {
+    background-color: pink;
   }
 
 }
 
 // end of body tag
-
-// ////David, is this used?
-// .primary-menu {
-//   font-size: $base-font-size;
-// }

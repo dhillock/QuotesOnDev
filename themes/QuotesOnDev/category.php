@@ -4,7 +4,7 @@
 
     <h1 class="selected-category-title">Category: <?php $category = get_the_category(); echo $category[0]->cat_name;?> </h1>
 
-    <hr class = 'line-top'>
+    <!-- <hr class = 'line-top'> -->
 
     <?php
         $args = array( 
@@ -22,8 +22,6 @@
     <div class="category-quote">
         <?php the_content(); ?> 
     </div>
-
-
 
     <span class="category-author"> &mdash; <?php echo the_title() . ", "; ?></span>
 

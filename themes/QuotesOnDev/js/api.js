@@ -59,42 +59,46 @@
   ///////////////////////////////////////////////////
 
   $('#submit').on('click', function(event) {
+    //
     event.preventDefault(); // do not refresh the page
 
-    const $authorToAdd = $('#author-form').val();
-    const $quoteToAdd = $('#quote-form').val();
-    const $sourceToAdd = $('#source-form').val();
-    const $sourceUrlToAdd = $('#url-form').val();
+    const $AddAuthor = $('#form-author').val();
+    const $AddQuote = $('#form-quote').val();
+    const $AddSource = $('#form-source').val();
+    const $AddUrl = $('#form-url').val();
 
     $.ajax({
       method: 'POST',
       url: red_vars.rest_url + 'wp/v2/posts',
       data: {
-        content: $quoteToAdd,
-        title: $authorToAdd,
-        _qod_quote_source: $sourceToAdd,
-        _qod_quote_source_url: $sourceUrlToAdd
+        content: $AddQuote,
+        title: $AddAuthor,
+        _qod_quote_source: $AddSource,
+        _qod_quote_source_url: $AddUrl
       },
       beforeSend: function(xhr) {
         xhr.setRequestHeader('X-WP-Nonce', red_vars.wpapi_nonce);
       }
     })
+      //
       .done(function(response) {
-        if ($authorToAdd === '' || $quoteToAdd === '') {
+        if ($AddAuthor === '' || $AddQuote === '') {
           alert(
-            'Please check if the name of the author and the quote were filled correctly'
+            'Please note that the Author and Quote are required - they cannot be blank'
           );
         } else {
           alert('Congratulations, the quote has been submitted.');
-          $('#author-form').val('');
-          $('#quote-form').val('');
-          $('#source-form').val('');
-          $('#url-form').val('');
+          $('#form-author').val('');
+          $('#form-quote').val('');
+          $('#form-source').val('');
+          $('#form-url').val('');
         }
       })
+      //
       .fail(function(err) {
         alert('Error: There was an error adding the quote');
       });
+    //
   }); // Closing .event listener (generate quote)
   //
 })(jQuery); // Closing document ready function

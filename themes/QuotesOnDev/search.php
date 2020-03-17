@@ -6,6 +6,16 @@
 
 <div class="search-results">
 
+    <?php
+        $args = array( 
+            'post_type' => 'post', 
+            'orderby' => 'title',
+            'order' => 'ASC',
+            'numberposts' => 9999
+            );
+        $quotes = get_posts( $args ); 
+    ?>
+
     <h1>Search Results for: <?php echo esc_html( get_search_query( false ) ); ?></h1><hr class="dotted-line">
 
     <?php if( have_posts() )  

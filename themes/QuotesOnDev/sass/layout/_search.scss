@@ -2,10 +2,24 @@
     // background-color: white;
     margin-top: $base-spacing;
 
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+
     .the-author {
         // background-color: blue;
         margin-top: $base-spacing;
         margin-bottom: $base-spacing;
+        font-family: $base-font-heading;
+
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .pagination {

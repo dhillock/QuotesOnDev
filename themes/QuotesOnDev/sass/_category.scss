@@ -13,22 +13,31 @@
 
 
   .selected-category-title {
-    margin-top: 1px;
-    font-size: 2rem;
+    // background-color: red;
+    font-family: Exo-light;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 48px;
+    margin-bottom: 21.4px;
+    padding-bottom: 24px;
+
+
+    border-bottom: 1px dotted #ffffff;
+
   }
 
-  .line-top {
-    border-top: 1px dotted white;
-    border-color: red;
-    margin-top: 40px;
-  }
+  // .line-top {
+  //   border-top: 1px dotted white;
+  //   border-color: red;
+  //   margin-top: 40px;
+  // }
 
   .line-bottom {
     border-top: 1px dotted white;
-    border-color: blue;
+    // border-color: blue;
     margin-top: 40px;
+    margin-bottom: 20px;
   }
-
-
 
 }
