@@ -846,7 +846,7 @@ Sidebar Placement Adjustments
 .inner-sidebar .cmb2-wrap label,
 #side-sortables .cmb2-wrap label {
   display: block;
-  font-weight: 700;
+  font-weight: 900;
   padding: 0 0 5px;
 }
 /* line 42, sass/partials/_sidebar_placements.scss */

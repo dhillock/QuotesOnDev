@@ -269,7 +269,7 @@ body {
     font-size: 2em;
     margin-top: 48px;
     margin-bottom: 21px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 48px; }
   body a {
     color: #00cc00; }
@@ -323,7 +323,7 @@ body {
     color: yellow; }
   @media (min-width: 1080px) {
     #quote-button {
-      width: 22%;
+      width: 32%;
       margin-left: 39%;
       margin-right: 39%; } }
 
@@ -406,17 +406,42 @@ header {
   margin-top: 1.5rem; }
   .search-results h1 {
     font-size: 2rem;
-    font-weight: 700; }
+    font-weight: 900; }
   .search-results .the-author {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-family: Exo-Medium, sans-serif;
     font-size: 1.5rem;
-    font-weight: 700; }
+    font-weight: 900; }
   .search-results a {
     text-decoration: none; }
   .search-results .pagination {
     margin-top: 1.5rem; }
+  @media (min-width: 1080px) {
+    .search-results {
+      width: 666px;
+      max-width: 1080px;
+      margin: 0 auto; }
+      .search-results a {
+        font-size: 1.25rem; }
+      .search-results::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        position: absolute;
+        top: 200px;
+        left: 25px;
+        font-size: 125px;
+        color: #00cc00; }
+      .search-results::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        font-size: 125px;
+        color: #00cc00; } }
 
 .random-quote-home-page {
   color: white; }
@@ -504,7 +529,7 @@ header {
       .site-main .type-page::before {
         content: '\f10d';
         font-family: 'FontAwesome';
-        font-weight: 700;
+        font-weight: 900;
         position: absolute;
         left: 0;
         top: 50%;
@@ -515,7 +540,7 @@ header {
       .site-main .type-page::after {
         content: '\f10e';
         font-family: 'FontAwesome';
-        font-weight: 700;
+        font-weight: 900;
         position: absolute;
         right: 0;
         top: 50%;
@@ -546,7 +571,7 @@ header {
       .archive-page::before {
         content: '\f10d';
         font-family: 'FontAwesome';
-        font-weight: 700;
+        font-weight: 900;
         position: absolute;
         top: 275px;
         left: 25px;
@@ -555,7 +580,7 @@ header {
       .archive-page::after {
         content: '\f10e';
         font-family: 'FontAwesome';
-        font-weight: 700;
+        font-weight: 900;
         position: absolute;
         top: 275px;
         right: 25px;
@@ -608,6 +633,31 @@ header {
     width: 60%; }
   .submit-a-quote #form-quote {
     height: 90px; }
+  @media (min-width: 1080px) {
+    .submit-a-quote {
+      width: 666px;
+      max-width: 1080px;
+      margin: 0 auto; }
+      .submit-a-quote .submit-a-quote a {
+        font-size: 1rem; }
+      .submit-a-quote::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        position: absolute;
+        top: 200px;
+        left: 25px;
+        font-size: 125px;
+        color: #00cc00; }
+      .submit-a-quote::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        font-size: 125px;
+        color: #00cc00; } }
 
 .page-not-found {
   font-family: Exo-Light, sans-serif;
@@ -634,7 +684,7 @@ header {
       .page-not-found::before {
         content: '\f10d';
         font-family: 'FontAwesome';
-        font-weight: 700;
+        font-weight: 900;
         position: absolute;
         top: 175px;
         left: 25px;
@@ -643,7 +693,7 @@ header {
       .page-not-found::after {
         content: '\f10e';
         font-family: 'FontAwesome';
-        font-weight: 700;
+        font-weight: 900;
         position: absolute;
         top: 175px;
         right: 25px;
@@ -686,6 +736,31 @@ header {
     margin-top: 3rem; }
   .selected-author-page a {
     color: brand-green; }
+  @media (min-width: 1080px) {
+    .selected-author-page {
+      width: 666px;
+      max-width: 1080px;
+      margin: 0 auto; }
+      .selected-author-page .submit-a-quote a {
+        font-size: 1rem; }
+      .selected-author-page::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        position: absolute;
+        top: 200px;
+        left: 25px;
+        font-size: 125px;
+        color: #00cc00; }
+      .selected-author-page::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        font-size: 125px;
+        color: #00cc00; } }
 
 .selected-category-page {
   margin-top: 1.25rem;
@@ -697,7 +772,7 @@ header {
   .selected-category-page .selected-category-title {
     font-family: Exo-light;
     font-size: 1.9rem;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 48px;
     margin-top: 48px;
     margin-bottom: 21.4px;
@@ -717,7 +792,7 @@ header {
       .selected-category-page::before {
         content: '\f10d';
         font-family: 'FontAwesome';
-        font-weight: 700;
+        font-weight: 900;
         position: absolute;
         top: 200px;
         left: 25px;
@@ -726,7 +801,7 @@ header {
       .selected-category-page::after {
         content: '\f10e';
         font-family: 'FontAwesome';
-        font-weight: 700;
+        font-weight: 900;
         position: absolute;
         top: 200px;
         right: 25px;
@@ -736,9 +811,34 @@ header {
 .selected-tag-page {
   width: 600px; }
   .selected-tag-page .selected-tag-title {
-    margin-top: 1px;
+    margin-top: 50px;
     font-size: 2rem; }
   .selected-tag-page .line-top {
     border-top: 1px dotted white;
     border-color: red;
     margin-top: 40px; }
+  @media (min-width: 1080px) {
+    .selected-tag-page {
+      width: 666px;
+      max-width: 1080px;
+      margin: 0 auto; }
+      .selected-tag-page .submit-a-quote a {
+        font-size: 1rem; }
+      .selected-tag-page::before {
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        position: absolute;
+        top: 200px;
+        left: 25px;
+        font-size: 125px;
+        color: #00cc00; }
+      .selected-tag-page::after {
+        content: '\f10e';
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        font-size: 125px;
+        color: #00cc00; } }
