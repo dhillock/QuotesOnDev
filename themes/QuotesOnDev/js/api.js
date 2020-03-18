@@ -1,6 +1,6 @@
 (function($) {
-  // Generate a random quote, on the home page. These classes must match those in front-page.php
-  const ClassHomeQuote = $('.home-quote');
+  // Generate a random quote, on the home page. These classes must match those in home.php
+  const ClassHomeQuote = $('.my-content');
   const ClassAuthor = $('.author');
   const ClassSource = $('.source');
   const ClassSourceLink = $('.source-link');
