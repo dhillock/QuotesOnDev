@@ -17,7 +17,6 @@
       <a href="https://redacademy.com/vancouver/">RED Academy</a> 
     </div>
 
-
     </nav>
 
   </footer>

@@ -22,7 +22,7 @@ Archive, and then Author...which is identical to the homepage. -->
         <!-- Display the random quote (the content) -->
         <div class="home-quote">
 
-            <q>
+            <q class = 'quote-content'>
                 <?php the_content(); ?> 
             </q>
 

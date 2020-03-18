@@ -1,6 +1,6 @@
 <?php
 
-show_admin_bar(false);
+show_admin_bar(true);
 
 /**
  * Quotes on Dev Theme functions and definitions.
@@ -107,28 +107,13 @@ function red_scripts() {
 //  function tag_page_filters($query) {
 // 	if (is_tag()) : 
 
-
 //     $query->set('orderby', 'slug');
 //     $query->set('order', 'ASC');
 //     $query->set('hide_empty', 1);
-// 	$query->set('number', 4);
+// 	   $query->set('number', 4);
 	
-
-
-//     endif; 
+//  endif; 
 // }
+
 // add_action('pre_get_posts', 'tag_page_filters');
-//
-//
-// This function is used to pre-empt the normal WP query. It is executed before the normal WP loops in the template files.
-// function inhabitent_adjust_productXXX($query) {
-//     // if(!is_admin() && is_post_type_archive('product')) :
 
-//     if(is_post_type_archive( array('product', 'adventure') )) :
-//         $query->set('orderby', 'title');
-//         $query->set('order', 'ASC');
-//         $query->set('posts_per_page', 16);
-
-//     endif;
-// }
-// add_action('pre_get_posts', 'inhabitent_adjust_productXXX');

@@ -51,9 +51,10 @@ body {
 
   a {
     color: $color-link;
+    text-decoration: none;
 
     &:hover {
-      color: hotpink;
+      color: yellow;
       cursor: pointer;
     }
   }

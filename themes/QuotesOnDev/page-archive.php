@@ -78,5 +78,4 @@
 
 </div>
 
-<!-- Get the footer -->
 <?php get_footer();?>

@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 <?php if ( is_user_logged_in() ) { ?>
 
     <div class="submit-a-quote">
@@ -26,7 +25,6 @@
 
         </form>
 
-
     </div>  
 
 <?php } else { ?>
@@ -34,7 +32,6 @@
     <div class="submit-a-quote">
 
         <h1> Submit a Quote </h1>
-
 
         <h2>Sorry, you must be logged in to submit a quote!</h2>
 

@@ -274,9 +274,10 @@ body {
     font-weight: 900;
     line-height: 48px; }
   body a {
-    color: #00cc00; }
+    color: #00cc00;
+    text-decoration: none; }
     body a:hover {
-      color: hotpink;
+      color: yellow;
       cursor: pointer; }
 
 @font-face {
@@ -308,12 +309,14 @@ body {
   font-style: italic; }
 
 #quote-button {
+  font-family: Exo-Medium, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   background: #222222;
   border: 2px solid #00cc00;
   border-radius: 3px;
   color: #00cc00;
-  font-weight: 400;
-  font-size: 1rem;
+  line-height: 20px;
   margin-top: 3rem;
   padding: .75rem 2.25rem;
   -webkit-box-orient: vertical;
@@ -325,9 +328,11 @@ body {
     color: yellow; }
   @media (min-width: 1080px) {
     #quote-button {
-      width: 32%;
-      margin-left: 39%;
-      margin-right: 39%; } }
+      font-size: 1.25rem;
+      padding: .75rem 2.25rem;
+      width: 26%;
+      margin-left: 37%;
+      margin-right: 37%; } }
 
 footer .company-info p,
 footer .company-info a {
@@ -473,6 +478,7 @@ header {
             align-items: center;
     text-decoration: none; }
     .random-quote-home-page .quote-section a {
+      text-decoration: none;
       font-size: 1.25rem;
       line-height: 30px;
       font-weight: 400; }

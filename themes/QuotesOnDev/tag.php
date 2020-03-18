@@ -24,7 +24,6 @@
             <?php the_content(); ?> 
         </div>
 
-
         <!-- If there is a source, put a comma and a space after the author's name -->
         <?php $quotesource = trim( get_post_meta( get_the_ID(), '_qod_quote_source', true ) ); ?>
         <?php  if( ! empty( $quotesource ) ){ ?>

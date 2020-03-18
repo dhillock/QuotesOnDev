@@ -1,5 +1,4 @@
 
-
 <!-- This is the template that is executed for the search prompt -->
 
 <form class = 'search-form' 
@@ -11,6 +10,7 @@
     <fieldset class = 'clear-fix'>
 
         <label class="search-field">
+        
             <input class="search-input" 
                    placeholder="SEARCH ..." 
                    type="search" name="s" 
@@ -19,7 +19,6 @@
         <a href="#" class="search-toggle">
             <i class="fas fa-search"></i>
         </a>
-
 
     </fieldset>
 
