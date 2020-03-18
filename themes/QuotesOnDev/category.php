@@ -41,18 +41,12 @@
 
         <?php } ?>
 
-    <hr class = 'line-bottom'>
+        <hr class = 'line-bottom'>
 
     <?php endforeach;?>
 
-        <?php the_posts_pagination(array (
-            'prev_text' => __( 'Prev' ),
-            'next_text' => __( 'Next' ),  
-            'screen_reader_text' => __('  ')
-        ));?>
-
-    </div>
-
+       <?php qod_numbered_pagination()?> 
+    
 </div>
 
 <?php get_footer();?>

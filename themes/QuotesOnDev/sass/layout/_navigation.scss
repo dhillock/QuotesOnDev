@@ -1,6 +1,5 @@
 // .nav-links {
 
-//     // background-color: blue;
 
 //     .page-numbers {
 //         color: red;
@@ -19,3 +18,17 @@
 //     }
 
 // }
+
+.number-pagination {
+    margin-top: 3rem;
+    font-family: $base-font-text;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: none;
+
+    a {
+        text-decoration: none;
+    }
+
+}

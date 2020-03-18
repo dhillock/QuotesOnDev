@@ -404,28 +404,40 @@ header {
           margin-left: auto;
           margin-right: auto; } }
 
+.number-pagination {
+  margin-top: 3rem;
+  font-family: Exo-Light, sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: none; }
+  .number-pagination a {
+    text-decoration: none; }
+
 .search-results {
   margin-top: 1.5rem; }
   .search-results h1 {
     font-size: 2rem;
-    font-weight: 900; }
+    font-weight: 700;
+    line-height: 48px; }
   .search-results .the-author {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-family: Exo-Medium, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 900; }
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700; }
   .search-results a {
     text-decoration: none; }
-  .search-results .pagination {
-    margin-top: 1.5rem; }
+  .search-results p {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400; }
   @media (min-width: 1080px) {
     .search-results {
       width: 666px;
       max-width: 1080px;
       margin: 0 auto; }
-      .search-results a {
-        font-size: 1.25rem; }
       .search-results::before {
         content: '\f10d';
         font-family: 'FontAwesome';
