@@ -554,22 +554,35 @@ header {
 .archive-page {
   padding-bottom: 75px;
   line-height: 2rem; }
+  .archive-page h1 {
+    font-size: 2em;
+    line-height: 49px;
+    font-weight: 700; }
   .archive-page h2 {
     font-size: 24px;
     line-height: 36px;
+    font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px; }
   .archive-page a {
     font-family: Exo-Light, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
     padding-right: 10px;
     text-decoration: none; }
+  @media (min-width: 600px) {
+    .archive-page a {
+      font-size: 20px;
+      line-height: 30px; } }
   @media (min-width: 1080px) {
     .archive-page {
       width: 666px;
       max-width: 1080px;
       margin: 0 auto; }
       .archive-page a {
-        font-size: 1.25rem; }
+        font-size: 20px;
+        line-height: 30px; }
       .archive-page::before {
         content: '\f10d';
         font-family: 'FontAwesome';

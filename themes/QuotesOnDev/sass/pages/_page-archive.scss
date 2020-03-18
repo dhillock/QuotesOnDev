@@ -7,18 +7,39 @@
   // margin: 0 0 1.3rem 3rem;
 
 
+  h1 {
+    font-size: 2em;
+    line-height: 49px;
+    font-weight: 700;
+  }
+
+
   h2 {
     font-size: 24px;
     line-height: 36px;
+    font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   a {
     font-family: $base-font-text;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
     padding-right: 10px;
     text-decoration: none;
   }
+
+  @include tablet {
+
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+  }
+
 
   @include desktop {
     // background-color: yellow;
@@ -27,9 +48,9 @@
     margin: 0 auto;
 
     a {
-      font-size: 1.25rem;
+      font-size: 20px;
+      line-height: 30px;
     }
-
 
     &::before {
 
