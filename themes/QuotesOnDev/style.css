@@ -447,17 +447,33 @@ header {
 
 .random-quote-home-page {
   color: white; }
-  .random-quote-home-page p {
-    font-size: 1.25rem;
+  .random-quote-home-page .home-quote {
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem; }
-  .random-quote-home-page .author {
-    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 30px;
     font-weight: 400; }
   .random-quote-home-page .quote-section {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none; }
+    .random-quote-home-page .quote-section a {
+      font-size: 1.25rem;
+      line-height: 30px;
+      font-weight: 400; }
+  .random-quote-home-page .author {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400; }
+  @media (min-width: 600px) {
+    .random-quote-home-page .home-quote {
+      font-size: 1.75rem;
+      line-height: 43px; } }
   @media (min-width: 1080px) {
     .random-quote-home-page p {
       display: -webkit-box;
@@ -469,6 +485,9 @@ header {
           -ms-flex-pack: center;
               justify-content: center;
       margin: 4.5rem 175px 1.5rem; }
+    .random-quote-home-page .home-quote {
+      font-size: 2.5rem;
+      line-height: 60px; }
     .random-quote-home-page .author {
       margin-left: 300px; }
     .random-quote-home-page q::before {
@@ -496,11 +515,13 @@ header {
     .random-quote-home-page .source {
       font-size: 1.25rem; } }
 
-.content-area .site-main .entry-header .entry-title {
-  color: #ffffff; }
-
-.content-area .site-main .entry-content p {
-  color: #ffffff; }
+.content-area {
+  color: white; }
+  .content-area .about-info {
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400; }
 
 @media (min-width: 1080px) {
   .site-main {
@@ -605,11 +626,16 @@ header {
 .submit-a-quote {
   font-size: 1rem; }
   .submit-a-quote h1 {
-    font-size: 2rem;
+    font-size: 2em;
+    line-height: 48px;
+    font-weight: 700;
     margin-top: 3rem;
     margin-bottom: 1.3rem; }
   .submit-a-quote h2 {
+    font-family: Exo-Light, sans-serif;
     font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
     margin-top: 1rem;
     margin-bottom: 1rem; }
   .submit-a-quote form {
@@ -653,8 +679,6 @@ header {
       width: 666px;
       max-width: 1080px;
       margin: 0 auto; }
-      .submit-a-quote .submit-a-quote a {
-        font-size: 1rem; }
       .submit-a-quote::before {
         content: '\f10d';
         font-family: 'FontAwesome';

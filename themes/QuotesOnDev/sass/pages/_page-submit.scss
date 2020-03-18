@@ -3,14 +3,19 @@
     font-size: 1rem;
 
     h1 {
-        font-size: 2rem;
+        font-size: 2em;
+        line-height: 48px;
+        font-weight: 700;
         margin-top: 3rem;
         margin-bottom: 1.3rem;
     }
 
     h2 {
         // background-color: red;
+        font-family: $base-font-text;
         font-size: 1rem;
+        line-height: 24px;
+        font-weight: 400;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -67,10 +72,6 @@
         max-width: 1080px;
         margin: 0 auto;
 
-
-        .submit-a-quote a {
-            font-size: 1rem;
-        }
 
         &::before {
 

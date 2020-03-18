@@ -2,20 +2,41 @@
 
   color: white;
 
-  p {
+  .home-quote {
+    // background-color: pink;
+    margin-top: $base-spacing;
     font-size: 1.25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .author {
-    margin-bottom: 1.5rem;
+    line-height: 30px;
     font-weight: 400;
   }
 
   .quote-section {
-    // background-color: pink;
     display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    a {
+      font-size: 1.25rem;
+      line-height: 30px;
+      font-weight: 400;
+    }
+  }
+
+  .author {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  @include tablet {
+
+    .home-quote {
+      font-size: 1.75rem;
+      line-height: 43px;
+
+    }
   }
 
   @include desktop {
@@ -25,6 +46,11 @@
       align-self: flex-start;
       justify-content: center;
       margin: 4.5rem 175px 1.5rem;
+    }
+
+    .home-quote {
+      font-size: 2.5rem;
+      line-height: 60px;
     }
 
     .author {
