@@ -11,7 +11,7 @@
             'post_type' => 'post', 
             'orderby' => 'title',
             'order' => 'ASC',
-            'numberposts' => 9999
+            'numberposts' => 10
             );
         $quotes = get_posts( $args ); 
     ?>
@@ -30,11 +30,11 @@
             
         <?php endwhile;?>
 
-   <?php the_posts_pagination(array (
+   <!-- <?php the_posts_pagination(array (
         'prev_text' => __( 'Prev' ),
         'next_text' => __( 'Next' ),  
         'screen_reader_text' => __('  ')
-    ));?>
+    ));?> -->
 
 </div>
 

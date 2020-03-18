@@ -80,7 +80,8 @@
         content: $AddQuote,
         title: $AddAuthor,
         _qod_quote_source: $AddSource,
-        _qod_quote_source_url: $AddUrl
+        _qod_quote_source_url: $AddUrl,
+        status: 'pending'
       },
       beforeSend: function(xhr) {
         xhr.setRequestHeader('X-WP-Nonce', red_vars.wpapi_nonce);
@@ -93,11 +94,12 @@
             'Please note that the Author and Quote are required - they cannot be blank'
           );
         } else {
-          alert('Congratulations, the quote has been submitted.');
           $('#form-author').val('');
           $('#form-quote').val('');
           $('#form-source').val('');
           $('#form-url').val('');
+
+          alert('Congratulations, the quote has been submitted.');
         }
       })
       //

@@ -11,7 +11,7 @@
             'post_type' => 'post', 
             'orderby' => 'title',
             'order' => 'ASC',
-            'posts_per_page' => -1
+            'posts_per_page' => 5 // this is not working
             );
         $quotes = get_posts( $args ); 
 
@@ -44,7 +44,9 @@
 
     <?php endforeach;?>
 
-    <div class="selected-category-navigation">
+    <!-- Only need 5 for tags -->
+    Learned that if you add the following, it will over-ride the posts_per_page above.
+    <!-- <div class="selected-category-navigation">
 
         <?php the_posts_pagination(array (
             'prev_text' => __( 'Prev' ),
@@ -52,7 +54,7 @@
             'screen_reader_text' => __('  ')
         ));?>
 
-    </div>
+    </div> -->
 
 </div>
 

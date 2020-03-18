@@ -12,7 +12,7 @@
             'orderby' => 'slug',
             'order' => 'ASC', 
             'hide_empty' => 1,
-            'number' => 999
+            'number' => 5
         ); 
             
         $quotes = get_posts( $args ); 
@@ -37,7 +37,8 @@
 
     <?php endforeach;?>
 
-    <div class="selected-tag-navigation">
+    <!-- only need 5 for tags -->
+    <!-- <div class="selected-tag-navigation">
 
         <?php the_posts_pagination(array (
             'prev_text' => __( 'Prev' ),
@@ -45,7 +46,7 @@
             'screen_reader_text' => __('  ')
         ));?>
 
-    </div>
+    </div> -->
 
 </div>
 

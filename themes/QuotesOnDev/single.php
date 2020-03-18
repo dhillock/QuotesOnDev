@@ -6,7 +6,7 @@
         $args = array( 
             'post_type' => 'post', 
             'orderby' => 'rand',
-            'numberposts' => 9999
+            'numberposts' => 1 // this is not working...but is supposed to be one anyway.
             );
         $quotes = get_posts( $args ); 
     ?>
