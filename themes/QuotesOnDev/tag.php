@@ -2,17 +2,17 @@
 
 <div class="selected-tag-page">
 
-    <h1 class="selected-tag-title">Tag: <?php echo single_term_title( '', false ) ;?> </h1>
-
-    <hr class = 'line-top'>
+   <h1 class="selected-tag-title">Tag: <?php echo single_term_title( '', false ) ;?> </h1>
 
     <?php
 
         $args = array(
-            'orderby' => 'slug',
+            'orderby' => 'title',
             'order' => 'ASC', 
             'hide_empty' => 1,
-            'number' => 5
+            'numberposts' => -1,
+            'posts_per_page' => 5
+            // 'number' => 5
         ); 
             
         $quotes = get_posts( $args ); 
@@ -24,21 +24,28 @@
             <?php the_content(); ?> 
         </div>
 
-<?php
-    $tag = get_queried_object();
-    echo $tag->slug
-?>
 
+        <!-- If there is a source, put a comma and a space after the author's name -->
+        <?php $quotesource = trim( get_post_meta( get_the_ID(), '_qod_quote_source', true ) ); ?>
+        <?php  if( ! empty( $quotesource ) ){ ?>
 
-        <span class="tag-author"> - <?php the_title(); ?></span>
-        <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>
+            <span class="tag-author"> &mdash; <?php echo the_title() . ", "; ?></span>
 
-        <hr class = 'line-bottom'>
+                <a href ="<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>">
+                    <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>
+                </a>
+
+        <?php } else { ?>
+
+            <p class="tag-author"> &mdash;
+                <?php echo the_title(); ?>
+            </p>
+
+        <?php } ?>
+
+    <hr class = 'line-bottom'>
 
     <?php endforeach;?>
-
-    <!-- only need 5 for tags -->
-    <!-- <div class="selected-tag-navigation">
 
         <?php the_posts_pagination(array (
             'prev_text' => __( 'Prev' ),
@@ -46,11 +53,8 @@
             'screen_reader_text' => __('  ')
         ));?>
 
-    </div> -->
+    </div>
 
 </div>
 
 <?php get_footer();?>
-
-
-

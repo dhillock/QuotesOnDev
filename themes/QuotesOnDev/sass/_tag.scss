@@ -1,31 +1,66 @@
-//
-//
 .selected-tag-page {
-    width: 600px;
+    // width: 600px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-family: $base-font-text;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
 
 
     .selected-tag-title {
-        margin-top: 50px;
-        font-size: 2rem;
+        // background-color: red;
+        font-family: $base-font-heading;
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 48px;
+        margin-top: 48px;
+        margin-bottom: 21.4px;
+        padding-bottom: 24px;
+        border-bottom: 1px dotted #ffffff;
     }
 
-    .line-top {
+    .tag-quote {
+        font-size: 1.25rem;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: $base-spacing;
+    }
+
+    .tag-author {
+        font-size: 1.25rem;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+
+    .line-bottom {
         border-top: 1px dotted white;
-        border-color: red;
-        margin-top: 40px;
+        // border-color: blue;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    //nav-links was here
+    @include tablet {
+
+        .tag-quote {
+            font-size: 1.75rem;
+            line-height: 42px;
+        }
+
+    }
 
     @include desktop {
+
         // background-color: yellow;
         width: 666px;
         max-width: 1080px;
         margin: 0 auto;
 
 
-        .submit-a-quote a {
-            font-size: 1rem;
+        .tag-quote {
+            font-size: 2.5rem;
+            line-height: 60px;
         }
 
         &::before {
@@ -57,7 +92,5 @@
         }
 
     }
-
-
 
 }

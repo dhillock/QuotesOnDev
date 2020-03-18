@@ -4,14 +4,13 @@
 
     <h1 class="selected-category-title">Category: <?php $category = get_the_category(); echo $category[0]->cat_name;?> </h1>
 
-    <!-- <hr class = 'line-top'> -->
-
     <?php
         $args = array( 
             'post_type' => 'post', 
             'orderby' => 'title',
             'order' => 'ASC',
-            'posts_per_page' => 5 // this is not working
+            'numberposts' => -1,
+            'posts_per_page' => 5
             );
         $quotes = get_posts( $args ); 
 
@@ -19,34 +18,32 @@
 
     <?php foreach ( $quotes as $post ) : setup_postdata( $post ); ?>
 
-    <div class="category-quote">
-        <?php the_content(); ?> 
-    </div>
-
-    <span class="category-author"> &mdash; <?php echo the_title() . ", "; ?></span>
+        <div class="category-quote">
+            <?php the_content(); ?> 
+        </div>
 
 
-<!-- <php
+        <!-- If there is a source, put a comma and a space after the author's name -->
+        <?php $quotesource = trim( get_post_meta( get_the_ID(), '_qod_quote_source', true ) ); ?>
+        <?php  if( ! empty( $quotesource ) ){ ?>
 
- we can use this to display or not display the , after the author's name
+            <span class="category-author"> &mdash; <?php echo the_title() . ", "; ?></span>
 
- echo get_post_meta( get_the_ID(), '_qod_quote_source', true );
+                <a href ="<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>">
+                    <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>
+                </a>
 
-?> -->
+        <?php } else { ?>
 
+            <p class="category-author"> &mdash;
+                <?php echo the_title(); ?>
+            </p>
 
-    <a href ="<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>">
-        <?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?>
-    </a>
-
+        <?php } ?>
 
     <hr class = 'line-bottom'>
 
     <?php endforeach;?>
-
-    <!-- Only need 5 for tags -->
-    Learned that if you add the following, it will over-ride the posts_per_page above.
-    <!-- <div class="selected-category-navigation">
 
         <?php the_posts_pagination(array (
             'prev_text' => __( 'Prev' ),
@@ -54,7 +51,7 @@
             'screen_reader_text' => __('  ')
         ));?>
 
-    </div> -->
+    </div>
 
 </div>
 

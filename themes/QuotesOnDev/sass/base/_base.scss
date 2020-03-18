@@ -1,6 +1,12 @@
 html {
   --base-spacing: $base-spacing;
+
+  html {
+    font-size: 16px
+  }
 }
+
+// is the above html font-size the same as the root font size below?
 
 :root {
   // this means that 1rem = 16px. Therefore, 32px = 2rem, and so-on.

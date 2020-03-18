@@ -244,6 +244,8 @@ a img.aligncenter {
 
 html {
   --base-spacing: $base-spacing; }
+  html html {
+    font-size: 16px; }
 
 :root {
   font-size: 16px; }
@@ -723,45 +725,6 @@ header {
   padding: .25rem .5rem;
   line-height: 1.5rem; }
 
-.selected-author-page {
-  margin-top: 1.25rem;
-  margin-bottom: 1.5rem;
-  font-family: Exo-Light, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: white; }
-  .selected-author-page .author-quote {
-    margin-bottom: 1.25rem; }
-  .selected-author-page .author-author {
-    margin-top: 3rem; }
-  .selected-author-page a {
-    color: brand-green; }
-  @media (min-width: 1080px) {
-    .selected-author-page {
-      width: 666px;
-      max-width: 1080px;
-      margin: 0 auto; }
-      .selected-author-page .submit-a-quote a {
-        font-size: 1rem; }
-      .selected-author-page::before {
-        content: '\f10d';
-        font-family: 'FontAwesome';
-        font-weight: 900;
-        position: absolute;
-        top: 200px;
-        left: 25px;
-        font-size: 125px;
-        color: #00cc00; }
-      .selected-author-page::after {
-        content: '\f10e';
-        font-family: 'FontAwesome';
-        font-weight: 900;
-        position: absolute;
-        top: 200px;
-        right: 25px;
-        font-size: 125px;
-        color: #00cc00; } }
-
 .selected-category-page {
   margin-top: 1.25rem;
   margin-bottom: 1.5rem;
@@ -770,25 +733,39 @@ header {
   font-weight: 400;
   color: white; }
   .selected-category-page .selected-category-title {
-    font-family: Exo-light;
-    font-size: 1.9rem;
-    font-weight: 900;
+    font-family: Exo-Medium, sans-serif;
+    font-size: 31px;
+    font-weight: 700;
     line-height: 48px;
     margin-top: 48px;
     margin-bottom: 21.4px;
     padding-bottom: 24px;
     border-bottom: 1px dotted #ffffff; }
+  .selected-category-page .category-quote {
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 1.5rem; }
+  .selected-category-page .category-author {
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400; }
   .selected-category-page .line-bottom {
     border-top: 1px dotted white;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px; }
+  @media (min-width: 600px) {
+    .selected-category-page .category-quote {
+      font-size: 1.75rem;
+      line-height: 42px; } }
   @media (min-width: 1080px) {
     .selected-category-page {
       width: 666px;
       max-width: 1080px;
       margin: 0 auto; }
-      .selected-category-page a {
-        font-size: 1.25rem; }
+      .selected-category-page .category-quote {
+        font-size: 2.5rem;
+        line-height: 60px; }
       .selected-category-page::before {
         content: '\f10d';
         font-family: 'FontAwesome';
@@ -809,21 +786,46 @@ header {
         color: #00cc00; } }
 
 .selected-tag-page {
-  width: 600px; }
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-family: Exo-Light, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white; }
   .selected-tag-page .selected-tag-title {
-    margin-top: 50px;
-    font-size: 2rem; }
-  .selected-tag-page .line-top {
+    font-family: Exo-Medium, sans-serif;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 48px;
+    margin-bottom: 21.4px;
+    padding-bottom: 24px;
+    border-bottom: 1px dotted #ffffff; }
+  .selected-tag-page .tag-quote {
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 1.5rem; }
+  .selected-tag-page .tag-author {
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400; }
+  .selected-tag-page .line-bottom {
     border-top: 1px dotted white;
-    border-color: red;
-    margin-top: 40px; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  @media (min-width: 600px) {
+    .selected-tag-page .tag-quote {
+      font-size: 1.75rem;
+      line-height: 42px; } }
   @media (min-width: 1080px) {
     .selected-tag-page {
       width: 666px;
       max-width: 1080px;
       margin: 0 auto; }
-      .selected-tag-page .submit-a-quote a {
-        font-size: 1rem; }
+      .selected-tag-page .tag-quote {
+        font-size: 2.5rem;
+        line-height: 60px; }
       .selected-tag-page::before {
         content: '\f10d';
         font-family: 'FontAwesome';
