@@ -1,21 +1,33 @@
 <?php get_header(); ?>
 
-<?php if( have_posts() ) :
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <?php the_content(); ?>
-    
-    <!-- Loop ends -->
-    <?php endwhile;?>
+	<div class="content-area">
 
-    <?php the_posts_navigation();?>
+		<main class="site-main" >
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-    
-<?php get_footer();?>
+				<article  <?php post_class(); ?>>
+					<header class="entry-header">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</header>
+
+					<div class="entry-content">
+						<p class="about-info">
+							Quotes on Dev is a project site for the RED Academy Web Developer Professional program. 
+                            It’s used to experiment with Ajax, WP API, jQuery, and other cool things. 🙂
+						</p>
+						<p class="about-quotes">This site is heavily inspired by Chris Coyler's
+							<a href="<?php echo esc_url( 'https://quotesondesign.com/' ); ?>">
+                            <?php printf( esc_html('Quotes on Design') ); ?></a>
+						</p>
+
+					</div>
+				</article>
+
+			<?php endwhile; ?>
+
+		</main>
+        
+	</div>
+
+<?php get_footer(); ?>
