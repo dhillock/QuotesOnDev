@@ -36,7 +36,7 @@
         <h2>Sorry, you must be logged in to submit a quote!</h2>
 
         <!-- David, find the correct path to load the login screen -->
-        <a href = "../../../wp-login.php" > Click here to login.> </a>
+        <a href = "http://dhconsulting.netfirms.com/16QoD/wp-login.php" > Click here to login.> </a>
 
     </div> 
 
