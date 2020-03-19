@@ -23,7 +23,6 @@
     <?php foreach ( $quotes as $post ) : setup_postdata( $post ); ?>
 
         <?php 
-        
             if(in_array(get_the_title(), $list)){ continue; }
             $list[] = get_the_title();
         ?>

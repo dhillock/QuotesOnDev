@@ -11,6 +11,7 @@ Archive, and then Author...which is identical to the homepage. -->
     <?php
         $args = array( 
             'post_type' => 'post', 
+            'title' => get_the_title(),
             'orderby' => 'rand',
             'numberposts' => 1
             );

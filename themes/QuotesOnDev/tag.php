@@ -8,6 +8,7 @@
 
         $args = array(
             'orderby' => 'title',
+            'tag' => single_term_title( '', false ),
             'order' => 'ASC', 
             'hide_empty' => 1,
             'numberposts' => -1,

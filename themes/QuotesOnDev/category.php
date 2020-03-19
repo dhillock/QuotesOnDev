@@ -7,6 +7,7 @@
     <?php
         $args = array( 
             'post_type' => 'post', 
+            'category_name' => get_the_category(),
             'orderby' => 'title',
             'order' => 'ASC',
             'numberposts' => -1,
