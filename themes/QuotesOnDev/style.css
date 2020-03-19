@@ -716,6 +716,12 @@ header {
         font-size: 125px;
         color: #00cc00; } }
 
+.hidden-message {
+  font-family: Exo-Light, sans-serif;
+  color: yellow;
+  display: none;
+  text-align: center; }
+
 .page-not-found {
   font-family: Exo-Light, sans-serif;
   font-size: 1rem; }

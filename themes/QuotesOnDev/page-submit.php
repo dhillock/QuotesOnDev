@@ -4,7 +4,7 @@
 
     <div class="submit-a-quote">
 
-        <form>
+        <form class = 'form-quote'>
 
             <h1> Submit a Quote </h1>
 
@@ -41,5 +41,9 @@
     </div> 
 
 <?php } ?>
+
+<div class = 'hidden-message' >
+    <h1> Fee free to submit another quote. 🙂 </h1>
+</div>
 
 <?php get_footer(); ?>

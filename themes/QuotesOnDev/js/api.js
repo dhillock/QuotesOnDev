@@ -7,6 +7,8 @@
 
   // The listener - wait for the quote-button to be clicked
   $('#quote-button').on('click', function(e) {
+    event.preventDefault();
+
     $.ajax({
       method: 'GET',
       url:
@@ -21,8 +23,6 @@
 
       $.each(data, function(index, value) {
         //
-        // console.log(value, 'value');
-
         // Push the database values into variables
         let quote = value.content.rendered;
         let author = value.title.rendered;
@@ -31,11 +31,6 @@
 
         // HTML
         $(ClassHomeQuote).html(quote);
-
-        // $('p')
-        //   .contents()
-        //   .unwrap()
-        //   .wrap('<q/>');
 
         if (sourceURL || source) {
           $(ClassAuthor).append('&mdash;&nbsp;', author, ',&nbsp;');
@@ -94,12 +89,17 @@
             'Please note that the Author and Quote are required - they cannot be blank'
           );
         } else {
+          //
+          $('.form-quote').slideUp(5000, function() {
+            alert('Congratulations, the quote has been submitted.');
+            $('.hidden-message').slideDown('5000');
+            $('.form-quote').slideDown('slow');
+          });
+
           $('#form-author').val('');
           $('#form-quote').val('');
           $('#form-source').val('');
           $('#form-url').val('');
-
-          alert('Congratulations, the quote has been submitted.');
         }
       })
       //

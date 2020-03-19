@@ -105,3 +105,10 @@
 
 
 }
+
+.hidden-message {
+    font-family: $base-font-text;
+    color: yellow;
+    display: none;
+    text-align: center;
+}
