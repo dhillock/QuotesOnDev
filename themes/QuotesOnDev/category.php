@@ -14,7 +14,6 @@
             'posts_per_page' => 5
             );
         $quotes = get_posts( $args ); 
-
     ?>
 
     <?php foreach ( $quotes as $post ) : setup_postdata( $post ); ?>
