@@ -52,13 +52,12 @@
       font-family: 'FontAwesome';
       font-weight: 900;
       position: absolute;
-      top: 275px;
+      top: 315px;
       left: 25px;
 
-
-      // transform: translateY(-50%);
       font-size: 125px;
       color: $brand-green;
+      // transform: translateY(-50%);
     }
 
     &::after {
@@ -66,12 +65,12 @@
       font-family: 'FontAwesome';
       font-weight: 900;
       position: absolute;
-      top: 275px;
+      top: 315px;
       right: 25px;
 
-      // transform: translateY(-50%);
       font-size: 125px;
       color: $brand-green;
+      // transform: translateY(-50%);
     }
 
   }

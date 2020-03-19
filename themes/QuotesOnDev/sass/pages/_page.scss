@@ -38,8 +38,9 @@
                 font-family: 'FontAwesome';
                 font-weight: 900;
                 position: absolute;
-                left: 0;
                 top: 50%;
+                left: 0;
+
                 transform: translateY(-50%);
                 font-size: 125px;
                 color: $brand-green;
@@ -50,8 +51,9 @@
                 font-family: 'FontAwesome';
                 font-weight: 900;
                 position: absolute;
-                right: 0;
                 top: 50%;
+                right: 0;
+
                 transform: translateY(-50%);
                 font-size: 125px;
                 color: $brand-green;
