@@ -39,6 +39,7 @@ This project uses the following technology:
 <H2 style='color:yellow'>Stretch Goals:</H2>
 
 - Unlike the specification website (https://quotes.academy.red/), on the archive page, the authors were sorted, and the duplicate authors were removed. The categories and tags were sorted too.
+- I installed the website on an internet platform: http://dhconsulting.netfirms.com/16QoD/index.php
 
 - I added animation to the Submit Quote Form.
 
